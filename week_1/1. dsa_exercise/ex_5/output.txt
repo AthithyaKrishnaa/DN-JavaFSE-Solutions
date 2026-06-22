@@ -1,0 +1,37 @@
+=== ADD TASKS ===
+Task Added: 1
+Task Added: 2
+Task Added: 3
+
+=== Task List ===
+TaskID: 1, Name: Design UI, Status: Pending
+TaskID: 2, Name: Build Backend, Status: In Progress
+TaskID: 3, Name: Testing, Status: Pending
+
+Searching Task ID: 2
+Task Found: TaskID: 2, Name: Build Backend, Status: In Progress
+
+Deleting Task ID: 2
+Task Deleted
+
+=== Task List ===
+TaskID: 1, Name: Design UI, Status: Pending
+TaskID: 3, Name: Testing, Status: Pending
+
+=== TIME COMPLEXITY ANALYSIS ===
+Add Task (end)     : O(n)
+Search Task        : O(n)
+Traverse Tasks     : O(n)
+Delete Task        : O(n)
+
+=== ADVANTAGES OVER ARRAYS ===
+- Dynamic size (no fixed limit)
+- Easy insertion and deletion
+- No shifting required like arrays
+
+=== LINKED LIST TYPES ===
+1. Singly Linked List ? one direction
+2. Doubly Linked List ? both directions
+3. Circular Linked List ? last connects to first
+
+=== Code Execution Successful ===

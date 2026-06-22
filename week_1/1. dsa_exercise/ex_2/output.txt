@@ -1,0 +1,33 @@
+=== LINEAR SEARCH ===
+Product Found:
+ID: 103, Name: Shoes, Category: Fashion
+
+=== SORTED ARRAY ===
+ID: 101, Name: Mouse, Category: Electronics
+ID: 102, Name: Book, Category: Education
+ID: 103, Name: Shoes, Category: Fashion
+ID: 104, Name: Laptop, Category: Electronics
+ID: 105, Name: Phone, Category: Electronics
+
+=== BINARY SEARCH ===
+Product Found:
+ID: 103, Name: Shoes, Category: Fashion
+
+=== BIG O ANALYSIS ===
+Linear Search:
+Best Case    : O(1)
+Average Case : O(n)
+Worst Case   : O(n)
+
+Binary Search:
+Best Case    : O(1)
+Average Case : O(log n)
+Worst Case   : O(log n)
+
+=== CONCLUSION ===
+Binary Search is more efficient for large
+e-commerce platforms because it reduces
+the search space by half in each step.
+However, the products must be sorted.
+
+=== Code Execution Successful ===

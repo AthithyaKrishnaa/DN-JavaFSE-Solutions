@@ -1,0 +1,27 @@
+=== FINANCIAL FORECAST USING RECURSION ===
+
+Year: 5 | Current Value: 10000.0
+Year: 4 | Current Value: 11000.0
+Year: 3 | Current Value: 12100.000000000002
+Year: 2 | Current Value: 13310.000000000004
+Year: 1 | Current Value: 14641.000000000005
+Year: 0 | Current Value: 16105.100000000008
+
+Final Predicted Value after 5 years: 16105.100000000008
+
+=== TIME COMPLEXITY ANALYSIS ===
+Each recursive call reduces 'years' by 1
+Total calls = n
+Time Complexity: O(n)
+Space Complexity (recursion stack): O(n)
+
+=== OPTIMIZATION ===
+- Recursion can cause repeated calculations in complex models
+- Use Memoization (store results) to avoid recomputation
+- Or convert recursion into iterative loop for better performance
+
+Optimized approach idea:
+Use loop instead of recursion:
+value = value * (1 + growthRate) repeatedly
+
+=== Code Execution Successful ===

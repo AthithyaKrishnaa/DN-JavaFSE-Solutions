@@ -1,0 +1,32 @@
+=== LINEAR SEARCH ===
+Book Found:
+BookID: 3, Title: Operating Systems, Author: Galvin
+
+=== SORTED BOOK LIST (For Binary Search) ===
+BookID: 4, Title: Database Systems, Author: Korth
+BookID: 2, Title: DSA Guide, Author: Mark
+BookID: 1, Title: Java Basics, Author: James
+BookID: 3, Title: Operating Systems, Author: Galvin
+BookID: 5, Title: Python Basics, Author: Guido
+
+=== BINARY SEARCH ===
+Book Found:
+BookID: 3, Title: Operating Systems, Author: Galvin
+
+=== TIME COMPLEXITY ANALYSIS ===
+Linear Search:
+Best Case    : O(1)
+Average Case : O(n)
+Worst Case   : O(n)
+
+Binary Search:
+Best Case    : O(1)
+Average Case : O(log n)
+Worst Case   : O(log n)
+
+=== CONCLUSION ===
+Linear Search is used when data is unsorted or small.
+Binary Search is used when data is sorted and large.
+Binary Search is much faster for large datasets.
+
+=== Code Execution Successful ===

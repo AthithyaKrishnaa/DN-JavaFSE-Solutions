@@ -1,0 +1,32 @@
+=== Bubble Sort Result ===
+OrderID: 102, Customer: Bala, Price: 1200.0
+OrderID: 105, Customer: Esha, Price: 2000.0
+OrderID: 104, Customer: Deepa, Price: 3000.0
+OrderID: 101, Customer: Arun, Price: 5000.0
+OrderID: 103, Customer: Charan, Price: 8000.0
+
+=== Quick Sort Result ===
+OrderID: 102, Customer: Bala, Price: 1200.0
+OrderID: 105, Customer: Esha, Price: 2000.0
+OrderID: 104, Customer: Deepa, Price: 3000.0
+OrderID: 101, Customer: Arun, Price: 5000.0
+OrderID: 103, Customer: Charan, Price: 8000.0
+
+=== TIME COMPLEXITY ANALYSIS ===
+Bubble Sort:
+Best Case    : O(n)
+Average Case : O(n^2)
+Worst Case   : O(n^2)
+
+Quick Sort:
+Best Case    : O(n log n)
+Average Case : O(n log n)
+Worst Case   : O(n^2)
+
+=== CONCLUSION ===
+Quick Sort is faster because it divides the array
+into smaller parts using divide-and-conquer.
+Bubble Sort is slow because it repeatedly swaps
+adjacent elements and compares many times.
+
+=== Code Execution Successful ===

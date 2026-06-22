@@ -1,0 +1,37 @@
+=== ADD EMPLOYEES ===
+Employee Added: 101
+Employee Added: 102
+Employee Added: 103
+
+=== Employee List ===
+ID: 101, Name: Arun, Position: Developer, Salary: 50000.0
+ID: 102, Name: Bala, Position: Tester, Salary: 40000.0
+ID: 103, Name: Charan, Position: Manager, Salary: 80000.0
+
+Searching Employee ID: 102
+Employee Found: ID: 102, Name: Bala, Position: Tester, Salary: 40000.0
+
+Deleting Employee ID: 102
+Employee Deleted Successfully
+
+=== Employee List ===
+ID: 101, Name: Arun, Position: Developer, Salary: 50000.0
+ID: 103, Name: Charan, Position: Manager, Salary: 80000.0
+
+=== TIME COMPLEXITY ANALYSIS ===
+Add Employee      : O(1) (if space available)
+Search Employee   : O(n)
+Traverse Employee : O(n)
+Delete Employee   : O(n)
+
+=== ARRAYS LIMITATIONS ===
+- Fixed size (cannot grow dynamically)
+- Slow deletion (shifting required)
+- Slow search for large datasets
+
+=== WHEN TO USE ARRAYS ===
+- Small fixed-size data
+- When memory layout matters
+- When performance is predictable and simple
+
+=== Code Execution Successful ===
