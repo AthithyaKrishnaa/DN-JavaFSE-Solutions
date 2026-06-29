@@ -1,0 +1,13 @@
+=== COMMAND PATTERN: HOME AUTOMATION ===
+
+Pressing ON button:
+Living Room light is now ON.
+
+Pressing OFF button:
+Living Room light is now OFF.
+
+=== CONCLUSION ===
+The RemoteControl (invoker) issues commands without knowing
+how each command actually turns the light on or off.
+
+=== Code Execution Successful ===

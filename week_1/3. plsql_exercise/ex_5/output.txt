@@ -1,0 +1,46 @@
+SQL> -- Schema and sample data created successfully.
+Table CUSTOMERS created.
+Table ACCOUNTS created.
+Table TRANSACTIONS created.
+Table AUDITLOG created.
+1 row inserted into Customers.
+1 row inserted into Accounts.
+Commit complete.
+
+Trigger UPDATECUSTOMERLASTMODIFIED compiled.
+Trigger LOGTRANSACTION compiled.
+Trigger CHECKTRANSACTIONRULES compiled.
+
+--- Scenario 1: Update a customer record ---
+Customer 1 balance updated. LastModified auto-set by trigger.
+
+PL/SQL procedure successfully completed.
+
+(Customers table - LastModified column updated to current SYSDATE by the trigger)
+
+--- Scenario 2 & 3: Insert a valid deposit ---
+Deposit of 200 recorded and logged to AuditLog.
+
+PL/SQL procedure successfully completed.
+
+(AuditLog after deposit)
+TransactionID  AccountID  Amount  TransactionType
+1              1          200     Deposit
+
+--- Scenario 3: Attempt an over-withdrawal (should fail) ---
+Error: ORA-20002: Withdrawal amount exceeds account balance.
+
+PL/SQL procedure successfully completed.
+
+--- Scenario 3: Valid withdrawal within balance ---
+Withdrawal of 100 recorded and logged to AuditLog.
+
+PL/SQL procedure successfully completed.
+
+(Final Accounts balance for AccountID 1: 1100)
+(AuditLog after all transactions)
+TransactionID  AccountID  Amount  TransactionType
+1              1          200     Deposit
+3              1          100     Withdrawal
+
+=== Code Execution Successful ===

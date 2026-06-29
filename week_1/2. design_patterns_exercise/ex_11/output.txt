@@ -1,0 +1,12 @@
+=== DEPENDENCY INJECTION: CUSTOMER MANAGEMENT ===
+
+Looking up customer with ID 101:
+Fetched record: Customer{id=101, name=Priya Menon, balance=12500.0}
+
+=== CONCLUSION ===
+CustomerService depends only on the CustomerRepository
+interface. The actual implementation is injected at
+construction time, making the service easy to test and
+swap implementations without changing CustomerService.
+
+=== Code Execution Successful ===

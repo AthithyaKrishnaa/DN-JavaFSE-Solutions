@@ -1,0 +1,34 @@
+SQL> -- Schema and sample data created successfully.
+Table CUSTOMERS created.
+Table ACCOUNTS created.
+Table EMPLOYEES created.
+1 row inserted into Customers.
+2 rows inserted into Accounts.
+Commit complete.
+
+Package CUSTOMERMANAGEMENT compiled.
+Package Body CUSTOMERMANAGEMENT compiled.
+Package EMPLOYEEMANAGEMENT compiled.
+Package Body EMPLOYEEMANAGEMENT compiled.
+Package ACCOUNTOPERATIONS compiled.
+Package Body ACCOUNTOPERATIONS compiled.
+
+--- Scenario 1: CustomerManagement ---
+Customer 2 (Jane Smith) added.
+Customer 1 updated: Name=John A. Doe, Balance=1100
+Customer 1 balance via package function: 1100
+
+--- Scenario 2: EmployeeManagement ---
+Employee 1 (Alice Johnson) hired as Manager in HR.
+Employee 1 updated: Position=Senior Manager, Salary=7500
+Employee 1 annual salary via package function: 90000
+
+--- Scenario 3: AccountOperations ---
+Account 3 (Fixed Deposit) opened for Customer 1.
+Total balance across all accounts for Customer 1: 3500
+Account 2 closed.
+Total balance for Customer 1 after closing Account 2: 3000
+
+PL/SQL procedure successfully completed.
+
+=== Code Execution Successful ===

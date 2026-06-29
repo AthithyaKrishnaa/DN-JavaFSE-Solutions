@@ -1,0 +1,18 @@
+=== SINGLETON PATTERN: LOGGER ===
+
+Requesting first Logger instance:
+Logger instance created.
+[LOG #1] Application started.
+
+Requesting second Logger instance:
+[LOG #2] User logged in.
+
+=== VERIFYING SINGLETON ===
+logger1 and logger2 reference the SAME instance.
+[LOG #3] This call increments the SAME shared counter.
+
+=== CONCLUSION ===
+Only one Logger instance exists across the application,
+ensuring consistent and centralized logging.
+
+=== Code Execution Successful ===

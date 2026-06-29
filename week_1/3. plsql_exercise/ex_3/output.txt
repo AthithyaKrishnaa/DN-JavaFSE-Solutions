@@ -1,0 +1,43 @@
+SQL> -- Schema and sample data created successfully.
+Table ACCOUNTS created.
+Table EMPLOYEES created.
+4 rows inserted into Accounts.
+3 rows inserted into Employees.
+Commit complete.
+
+=== Scenario 1: ProcessMonthlyInterest ===
+Procedure PROCESSMONTHLYINTEREST compiled.
+Account 1: interest of 10 applied. New balance: 1010
+Account 3: interest of 250 applied. New balance: 25250
+Account 4: interest of 85 applied. New balance: 8585
+Monthly interest processed for 3 savings account(s).
+
+PL/SQL procedure successfully completed.
+
+=== Scenario 2: UpdateEmployeeBonus ===
+Procedure UPDATEEMPLOYEEBONUS compiled.
+Bob Brown: bonus of 5% applied. New salary: 63000
+Carol White: bonus of 5% applied. New salary: 68250
+Bonus applied to 2 employee(s) in IT.
+
+PL/SQL procedure successfully completed.
+
+=== Scenario 3: TransferFunds ===
+Procedure TRANSFERFUNDS compiled.
+
+--- Test 1: Sufficient balance ---
+Transferred 300 from Account 2 to Account 1.
+
+--- Test 2: Insufficient balance ---
+Transfer failed: Account 2 has insufficient balance (1200).
+
+PL/SQL procedure successfully completed.
+
+(Accounts table after all scenarios)
+AccountID  AccountType  Balance
+1          Savings      1310
+2          Checking     1200
+3          Savings      25250
+4          Savings      8585
+
+=== Code Execution Successful ===

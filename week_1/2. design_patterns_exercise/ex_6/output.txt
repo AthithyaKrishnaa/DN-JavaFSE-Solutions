@@ -1,0 +1,20 @@
+=== PROXY PATTERN: IMAGE VIEWER ===
+
+First call to display():
+ProxyImage: No cached image found for "vacation_photo.png".
+Loading "vacation_photo.png" from remote server... (expensive operation)
+Displaying "vacation_photo.png"
+
+Second call to display() (should use cache):
+ProxyImage: Using cached image for "vacation_photo.png".
+Displaying "vacation_photo.png"
+
+Third call to display() (should use cache):
+ProxyImage: Using cached image for "vacation_photo.png".
+Displaying "vacation_photo.png"
+
+=== CONCLUSION ===
+The image is only loaded from the remote server once.
+Subsequent calls reuse the cached RealImage instance.
+
+=== Code Execution Successful ===

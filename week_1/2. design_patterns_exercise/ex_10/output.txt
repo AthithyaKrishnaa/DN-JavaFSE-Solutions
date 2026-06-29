@@ -1,0 +1,21 @@
+=== MVC PATTERN: STUDENT RECORD MANAGEMENT ===
+
+Initial Student Record:
+Student Details:
+  ID    : S101
+  Name  : Aarav Sharma
+  Grade : B+
+
+Updating student's grade via controller...
+
+Updated Student Record:
+Student Details:
+  ID    : S101
+  Name  : Aarav R. Sharma
+  Grade : A
+
+=== CONCLUSION ===
+The Controller mediates between the Model (Student) and
+the View (StudentView), keeping concerns separated.
+
+=== Code Execution Successful ===

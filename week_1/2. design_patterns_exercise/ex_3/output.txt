@@ -1,0 +1,26 @@
+=== BUILDER PATTERN: COMPUTER ===
+
+Building a Basic Office Computer:
+Computer Configuration:
+  CPU       : Intel i3
+  RAM       : 8GB
+  Storage   : 256GB SSD
+  GPU       : Integrated Graphics
+  WiFi      : false
+  Bluetooth : false
+
+Building a Gaming Computer:
+Computer Configuration:
+  CPU       : Intel i9
+  RAM       : 32GB
+  Storage   : 2TB NVMe SSD
+  GPU       : NVIDIA RTX 4090
+  WiFi      : true
+  Bluetooth : true
+
+=== CONCLUSION ===
+The Builder Pattern allows step-by-step construction of
+Computer objects with different optional configurations,
+without needing multiple constructors.
+
+=== Code Execution Successful ===

@@ -1,0 +1,25 @@
+SQL> -- Schema and sample data created successfully.
+Table ACCOUNTS created.
+2 rows inserted into Accounts.
+Commit complete.
+
+Function CALCULATEAGE compiled.
+Function CALCULATEMONTHLYINSTALLMENT compiled.
+Function HASSUFFICIENTBALANCE compiled.
+
+--- Scenario 1: CalculateAge ---
+Age for DOB 1985-05-15: 41
+Age for DOB 1958-03-02: 68
+
+--- Scenario 2: CalculateMonthlyInstallment ---
+EMI for loan of 5000 at 5% for 5 years: 94.36
+EMI for loan of 10000 at 6.5% for 3 years: 306.49
+
+--- Scenario 3: HasSufficientBalance ---
+Account 1 has sufficient balance for 500? TRUE
+Account 1 has sufficient balance for 5000? FALSE
+Account 99 (non-existent) has sufficient balance for 100? FALSE
+
+PL/SQL procedure successfully completed.
+
+=== Code Execution Successful ===

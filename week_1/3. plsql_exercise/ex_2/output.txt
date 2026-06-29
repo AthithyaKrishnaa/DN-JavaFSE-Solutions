@@ -1,0 +1,68 @@
+SQL> -- Schema and sample data created successfully.
+Table ACCOUNTS created.
+Table EMPLOYEES created.
+Table CUSTOMERS created.
+Table ERRORLOG created.
+2 rows inserted into Accounts.
+2 rows inserted into Employees.
+2 rows inserted into Customers.
+Commit complete.
+
+=== Scenario 1: SafeTransferFunds ===
+Procedure SAFETRANSFERFUNDS compiled.
+
+--- Test 1: Valid transfer ---
+Transferred 200 from Account 1 to Account 2.
+
+--- Test 2: Insufficient funds ---
+Error: Insufficient funds in Account 1.
+
+--- Test 3: Non-existent account ---
+Error: One of the accounts does not exist.
+
+PL/SQL procedure successfully completed.
+
+(Accounts table after Test 1 - balances adjusted, Tests 2 & 3 rolled back)
+AccountID  Balance
+1          800
+2          1700
+
+(ErrorLog after Scenario 1)
+ProcedureName        ErrorMessage
+SafeTransferFunds    Insufficient funds in Account 1
+SafeTransferFunds    Account not found: 99 or 2
+
+=== Scenario 2: UpdateSalary ===
+Procedure UPDATESALARY compiled.
+
+--- Test 1: Valid employee ---
+Salary for Employee 1 increased by 10%.
+
+--- Test 2: Invalid employee ID ---
+Error: Employee ID 999 does not exist.
+
+PL/SQL procedure successfully completed.
+
+(Employees table after update)
+EmployeeID  Name            Salary
+1           Alice Johnson   77000
+2           Bob Brown       60000
+
+=== Scenario 3: AddNewCustomer ===
+Procedure ADDNEWCUSTOMER compiled.
+
+--- Test 1: New unique customer ---
+Customer 3 (Robert Lee) added successfully.
+
+--- Test 2: Duplicate customer ID ---
+Error: Customer with ID 1 already exists.
+
+PL/SQL procedure successfully completed.
+
+(Customers table after Scenario 3)
+CustomerID  Name
+1           John Doe
+2           Jane Smith
+3           Robert Lee
+
+=== Code Execution Successful ===

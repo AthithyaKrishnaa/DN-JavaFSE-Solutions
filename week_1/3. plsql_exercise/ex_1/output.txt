@@ -1,0 +1,43 @@
+SQL> -- Schema and sample data created successfully.
+Table CUSTOMERS created.
+Table LOANS created.
+4 rows inserted into Customers.
+3 rows inserted into Loans.
+Commit complete.
+
+=== Scenario 1: Apply senior discount to loan interest rates ===
+John Doe (Age 41) is not eligible for the senior discount.
+Jane Smith (Age 35) is not eligible for the senior discount.
+Robert Lee (Age 68) is above 60. 1% interest discount applied.
+Maria Gomez (Age 63) is above 60. 1% interest discount applied.
+
+PL/SQL procedure successfully completed.
+
+(Loans table after update)
+LoanID  CustomerID  LoanAmount  InterestRate
+1       1           5000        5.0000
+2       3           10000       6.4350
+3       4           7500        4.2075
+
+=== Scenario 2: Promote customers to VIP status ===
+John Doe (Balance $1000) does not qualify for VIP status.
+Jane Smith (Balance $1500) does not qualify for VIP status.
+Robert Lee (Balance $25000) promoted to VIP.
+Maria Gomez (Balance $8500) does not qualify for VIP status.
+Total customers promoted to VIP: 1
+
+PL/SQL procedure successfully completed.
+
+(Customers table after update)
+CustomerID  Name          Balance  IsVIP
+1           John Doe      1000     N
+2           Jane Smith    1500     N
+3           Robert Lee    25000    Y
+4           Maria Gomez   8500     N
+
+=== Scenario 3: Loan due reminders (next 30 days) ===
+Reminder: Loan #3 for Maria Gomez is due on 2026-07-19.
+
+PL/SQL procedure successfully completed.
+
+=== Code Execution Successful ===

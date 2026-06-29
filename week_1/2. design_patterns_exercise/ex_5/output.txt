@@ -1,0 +1,19 @@
+=== DECORATOR PATTERN: NOTIFICATIONS ===
+
+Sending via Email only:
+Sending EMAIL notification: Order #1001 has shipped.
+
+Sending via Email + SMS:
+Sending EMAIL notification: Order #1002 has shipped.
+Sending SMS notification: Order #1002 has shipped.
+
+Sending via Email + SMS + Slack:
+Sending EMAIL notification: Order #1003 has shipped.
+Sending SMS notification: Order #1003 has shipped.
+Sending SLACK notification: Order #1003 has shipped.
+
+=== CONCLUSION ===
+Decorators dynamically add new notification channels
+without modifying the original EmailNotifier class.
+
+=== Code Execution Successful ===

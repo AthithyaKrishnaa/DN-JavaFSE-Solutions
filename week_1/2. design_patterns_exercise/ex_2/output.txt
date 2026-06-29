@@ -1,0 +1,16 @@
+=== FACTORY METHOD PATTERN: DOCUMENT MANAGEMENT ===
+
+Created document type: Word
+Opening Word document...
+
+Created document type: PDF
+Opening PDF document...
+
+Created document type: Excel
+Opening Excel document...
+
+=== CONCLUSION ===
+The client code only depends on the abstract DocumentFactory
+and Document types, not the concrete classes.
+
+=== Code Execution Successful ===

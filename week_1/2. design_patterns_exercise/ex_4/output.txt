@@ -1,0 +1,13 @@
+=== ADAPTER PATTERN: PAYMENT GATEWAYS ===
+
+Processing payment via PayPal:
+PayPalGateway: Sent payment of $150.75 via PayPal.
+
+Processing payment via Stripe:
+StripeGateway: Made transaction of 299.99 USD via Stripe.
+
+=== CONCLUSION ===
+Both gateways are used through the same PaymentProcessor
+interface, even though their underlying APIs are different.
+
+=== Code Execution Successful ===

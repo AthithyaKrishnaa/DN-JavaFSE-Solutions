@@ -1,0 +1,13 @@
+=== STRATEGY PATTERN: PAYMENT METHODS ===
+
+Checkout #1 (Credit Card):
+Paid $250.0 using Credit Card ending in 1234
+
+Checkout #2 (PayPal, strategy switched at runtime):
+Paid $75.5 using PayPal account: buyer@example.com
+
+=== CONCLUSION ===
+The PaymentContext delegates payment processing to whichever
+PaymentStrategy is selected, without changing its own code.
+
+=== Code Execution Successful ===

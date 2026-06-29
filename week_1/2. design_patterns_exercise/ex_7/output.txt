@@ -1,0 +1,22 @@
+=== OBSERVER PATTERN: STOCK MARKET ===
+MobileApp registered for AAPL updates.
+WebApp registered for AAPL updates.
+
+AAPL price changed to $189.5
+MobileApp Notification: AAPL is now $189.5
+WebApp Notification: AAPL is now $189.5
+
+AAPL price changed to $192.1
+MobileApp Notification: AAPL is now $192.1
+WebApp Notification: AAPL is now $192.1
+
+WebApp deregistered from AAPL updates.
+
+AAPL price changed to $195.75
+MobileApp Notification: AAPL is now $195.75
+
+=== CONCLUSION ===
+All registered observers are automatically notified
+whenever the stock price changes.
+
+=== Code Execution Successful ===
