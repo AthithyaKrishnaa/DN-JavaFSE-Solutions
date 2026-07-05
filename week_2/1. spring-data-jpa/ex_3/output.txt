@@ -1,0 +1,31 @@
+=== Hibernate Annotation Config walk through (simulated) ===
+hibernate.cfg.xml ->
+  dialect  = org.hibernate.dialect.MySQL5Dialect
+  driver   = com.mysql.cj.jdbc.Driver
+  url      = jdbc:mysql://localhost:3306/ormlearn
+  username = root
+  password = ****
+
+-- CREATE --
+[session.save] Employee [id=1, firstName=Manoj, lastName=Kumar, salary=4000]
+[session.save] Employee [id=2, firstName=Dilip, lastName=Kumar, salary=3000]
+[session.save] Employee [id=3, firstName=Maria, lastName=Pia, salary=10000]
+
+-- READ --
+[session.createQuery("FROM Employee").list()]
+   Employee [id=1, firstName=Manoj, lastName=Kumar, salary=4000]
+   Employee [id=2, firstName=Dilip, lastName=Kumar, salary=3000]
+   Employee [id=3, firstName=Maria, lastName=Pia, salary=10000]
+
+-- UPDATE (empID1 salary) --
+[session.update] Employee [id=1, firstName=Manoj, lastName=Kumar, salary=5000]
+
+-- DELETE (empID2) --
+[session.delete] removed Employee [id=2, firstName=Dilip, lastName=Kumar, salary=3000]
+
+-- READ (after update/delete) --
+[session.createQuery("FROM Employee").list()]
+   Employee [id=1, firstName=Manoj, lastName=Kumar, salary=5000]
+   Employee [id=3, firstName=Maria, lastName=Pia, salary=10000]
+
+remaining employee ids: 1, 3

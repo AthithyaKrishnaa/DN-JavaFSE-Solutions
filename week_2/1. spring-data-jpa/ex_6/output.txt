@@ -1,0 +1,10 @@
+=== findCountryByCode("IN") ===
+Start
+Country:Country [code=IN, name=India]
+Name matches expected value 'India': true
+End
+
+=== findCountryByCode("ZZ") - not present ===
+Start
+Caught expected CountryNotFoundException: Country not found for code: ZZ
+End

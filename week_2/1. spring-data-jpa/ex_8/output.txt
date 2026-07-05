@@ -1,0 +1,6 @@
+=== testUpdateCountry() ===
+Start
+Before update: Country [code=IN, name=India]
+After update: Country [code=IN, name=Republic of India]
+Name was modified: true
+End

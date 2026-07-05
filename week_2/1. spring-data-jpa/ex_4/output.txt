@@ -1,0 +1,19 @@
+=== JPA vs Hibernate vs Spring Data JPA: addEmployee() comparison ===
+
+-- Hibernate style (manual Session/Transaction) --
+   [Hibernate] session.beginTransaction()
+   [Hibernate] session.save(employee) -> id=1
+   [Hibernate] tx.commit()
+   [Hibernate] session.close()
+Result: Employee [id=1, firstName=Kiran, salary=4500] (returned id=1)
+
+-- Spring Data JPA style (repository + @Transactional service) --
+   [SpringDataJPA] employeeRepository.save(employee)
+   [SpringDataJPA] saved -> id=1
+Result: Employee [id=1, firstName=Asha, salary=6200]
+
+-- Summary --
+JPA             : specification only (JSR 338), no implementation of its own
+Hibernate       : concrete JPA implementation, needs explicit Session/Transaction handling
+Spring Data JPA : abstraction over a JPA provider (e.g. Hibernate);
+                  repository.save() + @Transactional removes the boilerplate seen above

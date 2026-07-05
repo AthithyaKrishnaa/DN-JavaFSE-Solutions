@@ -1,0 +1,7 @@
+main                  INFO DynamicLaptopSearchDemo Inside main
+main                  INFO DynamicLaptopSearchDemo Start
+main                 DEBUG DynamicLaptopSearchDemo results=[Laptop [model=Nimbus Pro, ramSize=16GB, hardDiskSize=1TB SSD, operatingSystem=Windows, cpu=Intel i7, customerReview=4.6]]
+main                  INFO DynamicLaptopSearchDemo End
+main                  INFO DynamicLaptopSearchDemo Start
+main                 DEBUG DynamicLaptopSearchDemo results=[Laptop [model=Zephyr Air, ramSize=16GB, hardDiskSize=512GB SSD, operatingSystem=macOS, cpu=Apple M2, customerReview=4.8]]
+main                  INFO DynamicLaptopSearchDemo End

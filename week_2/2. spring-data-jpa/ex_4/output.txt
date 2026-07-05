@@ -1,0 +1,5 @@
+main                  INFO GetEmployeeWithDepartmentDemo Inside main
+main                  INFO GetEmployeeWithDepartmentDemo Start
+main                 DEBUG GetEmployeeWithDepartmentDemo Employee:Employee [id=1, name=John Smith]
+main                 DEBUG GetEmployeeWithDepartmentDemo Department:Department [id=1, name=IT]
+main                  INFO GetEmployeeWithDepartmentDemo End

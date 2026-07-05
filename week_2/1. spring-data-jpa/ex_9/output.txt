@@ -1,0 +1,8 @@
+=== testDeleteCountry() ===
+Countries before: 2
+Start
+Added: Country [code=SG, name=Singapore]
+Deleted country with code SG
+Confirmed deleted -> Country not found for code: SG
+End
+Countries after: 2

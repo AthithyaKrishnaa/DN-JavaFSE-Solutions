@@ -1,0 +1,5 @@
+main                  INFO AddSkillToEmployeeDemo    Inside main
+main                  INFO AddSkillToEmployeeDemo    Start
+main                 DEBUG AddSkillToEmployeeDemo    Before add skillList=[]
+main                 DEBUG AddSkillToEmployeeDemo    After add skillList=[Skill [id=3, name=Communication]]
+main                  INFO AddSkillToEmployeeDemo    End

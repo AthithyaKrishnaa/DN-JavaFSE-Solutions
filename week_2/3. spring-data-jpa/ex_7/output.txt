@@ -1,0 +1,4 @@
+main                  INFO AllEmployeesNativeQueryDemo Inside main
+main                  INFO AllEmployeesNativeQueryDemo Start
+main                 DEBUG AllEmployeesNativeQueryDemo employees=[Employee [id=1, name=John Smith, salary=55000.0], Employee [id=2, name=Priya Nair, salary=62000.0], Employee [id=3, name=Michael Brown, salary=48000.0]]
+main                  INFO AllEmployeesNativeQueryDemo End

@@ -1,0 +1,8 @@
+=== testAddCountry() ===
+Countries before add: 2
+Start
+Added: Country [code=SG, name=Singapore]
+Fetched after add: Country [code=SG, name=Singapore]
+Name matches: true
+End
+Countries after add: 3

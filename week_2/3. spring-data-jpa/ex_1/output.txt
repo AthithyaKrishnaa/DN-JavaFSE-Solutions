@@ -1,0 +1,13 @@
+main                  INFO HqlVsJpqlDemo   Inside main
+main                  INFO HqlVsJpqlDemo   Start
+main                 DEBUG HqlVsJpqlDemo   Select query validAsJpql=true
+main                 DEBUG HqlVsJpqlDemo   Select query validAsHql=true
+main                  INFO HqlVsJpqlDemo   End
+main                  INFO HqlVsJpqlDemo   Start
+main                 DEBUG HqlVsJpqlDemo   Update query validAsJpql=true
+main                 DEBUG HqlVsJpqlDemo   Update query validAsHql=true
+main                  INFO HqlVsJpqlDemo   End
+main                  INFO HqlVsJpqlDemo   Start
+main                 DEBUG HqlVsJpqlDemo   Insert query validAsJpql=false
+main                 DEBUG HqlVsJpqlDemo   Insert query validAsHql=true
+main                  INFO HqlVsJpqlDemo   End

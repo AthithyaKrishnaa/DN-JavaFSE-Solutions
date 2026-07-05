@@ -1,0 +1,39 @@
+=== Hibernate XML Config walk through (simulated) ===
+
+-- CREATE --
+[Session] beginTransaction()
+[Session] save() -> Employee [id=1, firstName=Zara, lastName=Ali, salary=1000]
+[Transaction] commit()
+[Session] close()
+[Session] beginTransaction()
+[Session] save() -> Employee [id=2, firstName=Daisy, lastName=Das, salary=5000]
+[Transaction] commit()
+[Session] close()
+[Session] beginTransaction()
+[Session] save() -> Employee [id=3, firstName=John, lastName=Paul, salary=10000]
+[Transaction] commit()
+[Session] close()
+
+-- READ (list) --
+[Session] createQuery("FROM Employee").list() -> 3 row(s)
+[Session] close()
+   Employee [id=1, firstName=Zara, lastName=Ali, salary=1000]
+   Employee [id=2, firstName=Daisy, lastName=Das, salary=5000]
+   Employee [id=3, firstName=John, lastName=Paul, salary=10000]
+
+-- READ (get by id) --
+[Session] get(Employee.class, 2) -> Employee [id=2, firstName=Daisy, lastName=Das, salary=5000]
+[Session] close()
+
+-- DELETE --
+[Session] beginTransaction()
+[Session] get(Employee.class, 1) -> Employee [id=1, firstName=Zara, lastName=Ali, salary=1000]
+[Session] delete() -> removed id 1
+[Transaction] commit()
+[Session] close()
+
+-- READ (list after delete) --
+[Session] createQuery("FROM Employee").list() -> 2 row(s)
+[Session] close()
+   Employee [id=2, firstName=Daisy, lastName=Das, salary=5000]
+   Employee [id=3, firstName=John, lastName=Paul, salary=10000]

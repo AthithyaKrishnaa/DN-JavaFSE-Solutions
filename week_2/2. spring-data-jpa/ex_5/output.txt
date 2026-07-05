@@ -1,0 +1,4 @@
+main                  INFO AddEmployeeDemo           Inside main
+main                  INFO AddEmployeeDemo           Start
+main                 DEBUG AddEmployeeDemo           employee=Employee [id=1, name=Priya Nair, salary=51000.0, permanent=true, dateOfBirth=1993-08-04, department=Department [id=1, name=IT]]
+main                  INFO AddEmployeeDemo           End

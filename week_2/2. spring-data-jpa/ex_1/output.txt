@@ -1,0 +1,10 @@
+main                  INFO CountryQueryMethodsDemo   Inside main
+main                  INFO CountryQueryMethodsDemo   Start
+main                 DEBUG CountryQueryMethodsDemo   countries=[Country [code=BV, name=Bouvet Island], Country [code=DJ, name=Djibouti], Country [code=GP, name=Guadeloupe], Country [code=GS, name=South Georgia and the South Sandwich Islands], Country [code=LU, name=Luxembourg], Country [code=SS, name=South Sudan], Country [code=TF, name=French Southern Territories], Country [code=UM, name=United States Minor Outlying Islands], Country [code=ZA, name=South Africa]]
+main                  INFO CountryQueryMethodsDemo   End
+main                  INFO CountryQueryMethodsDemo   Start
+main                 DEBUG CountryQueryMethodsDemo   countries=[Country [code=BV, name=Bouvet Island], Country [code=DJ, name=Djibouti], Country [code=TF, name=French Southern Territories], Country [code=GP, name=Guadeloupe], Country [code=LU, name=Luxembourg], Country [code=ZA, name=South Africa], Country [code=GS, name=South Georgia and the South Sandwich Islands], Country [code=SS, name=South Sudan], Country [code=UM, name=United States Minor Outlying Islands]]
+main                  INFO CountryQueryMethodsDemo   End
+main                  INFO CountryQueryMethodsDemo   Start
+main                 DEBUG CountryQueryMethodsDemo   countries=[Country [code=ZM, name=Zambia], Country [code=ZW, name=Zimbabwe]]
+main                  INFO CountryQueryMethodsDemo   End

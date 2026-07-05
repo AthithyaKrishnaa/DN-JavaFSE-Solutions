@@ -1,0 +1,5 @@
+main                  INFO UpdateEmployeeDemo        Inside main
+main                  INFO UpdateEmployeeDemo        Start
+main                 DEBUG UpdateEmployeeDemo        Before update employee=Employee [id=1, name=John Smith, department=Department [id=1, name=IT]]
+main                 DEBUG UpdateEmployeeDemo        After update employee=Employee [id=1, name=John Smith, department=Department [id=2, name=HR]]
+main                  INFO UpdateEmployeeDemo        End

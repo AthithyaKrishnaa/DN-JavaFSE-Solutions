@@ -1,0 +1,12 @@
+main                  INFO PermanentEmployeesEagerFetchDemo Inside main
+main                  INFO PermanentEmployeesEagerFetchDemo Start
+main                 DEBUG PermanentEmployeesEagerFetchDemo Query 1: SELECT e FROM Employee e WHERE e.permanent = 1
+main                 DEBUG PermanentEmployeesEagerFetchDemo Query 2: SELECT employees FROM Employee WHERE dp_id = 2
+main                 DEBUG PermanentEmployeesEagerFetchDemo Query 3: SELECT employees FROM Employee WHERE dp_id = 3
+main                 DEBUG PermanentEmployeesEagerFetchDemo Query 4: SELECT skills FROM Skill JOIN employee_skill WHERE em_id = 1
+main                 DEBUG PermanentEmployeesEagerFetchDemo Query 5: SELECT skills FROM Skill JOIN employee_skill WHERE em_id = 2
+main                 DEBUG PermanentEmployeesEagerFetchDemo Permanent Employees:[Employee [id=1, name=John Smith], Employee [id=2, name=Priya Nair]]
+main                 DEBUG PermanentEmployeesEagerFetchDemo Skills:[Skill [id=1, name=Java]]
+main                 DEBUG PermanentEmployeesEagerFetchDemo Skills:[Skill [id=2, name=SQL]]
+main                 DEBUG PermanentEmployeesEagerFetchDemo Total queries executed:5
+main                  INFO PermanentEmployeesEagerFetchDemo End

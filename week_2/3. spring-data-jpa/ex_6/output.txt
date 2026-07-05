@@ -1,0 +1,8 @@
+main                  INFO AverageSalaryDemo    Inside main
+main                  INFO AverageSalaryDemo    Start
+main                 DEBUG AverageSalaryDemo    Average Salary:54000.0
+main                  INFO AverageSalaryDemo    End
+main                  INFO AverageSalaryDemo    Start
+main                 DEBUG AverageSalaryDemo    Average Salary for department 1:58500.0
+main                 DEBUG AverageSalaryDemo    Average Salary for department 2:49500.0
+main                  INFO AverageSalaryDemo    End

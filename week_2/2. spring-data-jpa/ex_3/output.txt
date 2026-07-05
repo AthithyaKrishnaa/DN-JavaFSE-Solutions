@@ -1,0 +1,6 @@
+main                  INFO PayrollBeanMappingDemo    Inside main
+main                  INFO PayrollBeanMappingDemo    Start
+main                 DEBUG PayrollBeanMappingDemo    departments=[Department [id=1, name=IT], Department [id=2, name=HR], Department [id=3, name=Finance]]
+main                 DEBUG PayrollBeanMappingDemo    skills=[Skill [id=1, name=Java], Skill [id=2, name=SQL], Skill [id=3, name=Communication]]
+main                 DEBUG PayrollBeanMappingDemo    employees=[Employee [id=1, name=John Smith, salary=55000.0, permanent=true, dateOfBirth=1990-05-12], Employee [id=2, name=Emma Davis, salary=62000.0, permanent=true, dateOfBirth=1988-11-23], Employee [id=3, name=Michael Brown, salary=48000.0, permanent=false, dateOfBirth=1995-02-17]]
+main                  INFO PayrollBeanMappingDemo    End

@@ -1,0 +1,4 @@
+main                  INFO SpringDataJpaQuickExample Inside main
+main                  INFO SpringDataJpaQuickExample Start
+main                 DEBUG SpringDataJpaQuickExample countries=[Country [code=IN, name=India], Country [code=US, name=United States of America]]
+main                  INFO SpringDataJpaQuickExample End

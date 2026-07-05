@@ -1,0 +1,10 @@
+main                  INFO PermanentEmployeesNoEagerFetchDemo Inside main
+main                  INFO PermanentEmployeesNoEagerFetchDemo Start
+main                 DEBUG PermanentEmployeesNoEagerFetchDemo Query 1: SELECT e FROM Employee e WHERE e.permanent = 1
+main                 DEBUG PermanentEmployeesNoEagerFetchDemo Query 2: SELECT * FROM department WHERE dp_id = 2
+main                 DEBUG PermanentEmployeesNoEagerFetchDemo Query 3: SELECT * FROM department WHERE dp_id = 3
+main                 DEBUG PermanentEmployeesNoEagerFetchDemo Permanent Employees:[Employee [id=1, name=John Smith], Employee [id=2, name=Priya Nair]]
+main                 ERROR PermanentEmployeesNoEagerFetchDemo failed to lazily initialize a collection of role: Employee.skillList, could not initialize proxy - no Session
+main                 ERROR PermanentEmployeesNoEagerFetchDemo failed to lazily initialize a collection of role: Employee.skillList, could not initialize proxy - no Session
+main                 DEBUG PermanentEmployeesNoEagerFetchDemo Total queries executed:3
+main                  INFO PermanentEmployeesNoEagerFetchDemo End

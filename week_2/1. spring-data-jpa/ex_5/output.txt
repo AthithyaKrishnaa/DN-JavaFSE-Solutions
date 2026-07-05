@@ -1,0 +1,27 @@
+=== Country table population (ddl-auto explanation + bulk insert) ===
+
+-- ddl-auto strategies --
+[ddl-auto=create] dropping existing table data and structure, creating new table 'country'
+[ddl-auto=update] table 'country' does not exist, creating it
+[ddl-auto=create-drop] creating table 'country' for this run (will be dropped on shutdown)
+caught expected exception -> [ddl-auto=validate] table 'country' not found
+
+-- Delete existing records, then bulk insert country list --
+Before cleanup, table had 2 record(s)
+Deleted 2 existing record(s) from country table
+
+-- Result --
+Total countries inserted: 249
+Total countries in repository: 249
+First 5 rows:
+   AF -> Afghanistan
+   AL -> Albania
+   DZ -> Algeria
+   AS -> American Samoa
+   AD -> Andorra
+Last 5 rows:
+   EH -> Western Sahara
+   YE -> Yemen
+   ZM -> Zambia
+   ZW -> Zimbabwe
+   AX -> Åland Islands

@@ -1,0 +1,8 @@
+main                  INFO ManyToManyEmployeeSkillFetchDemo Inside main
+main                  INFO ManyToManyEmployeeSkillFetchDemo Start
+main                 DEBUG ManyToManyEmployeeSkillFetchDemo Employee:Employee [id=1, name=John Smith]
+main                 ERROR ManyToManyEmployeeSkillFetchDemo failed to lazily initialize a collection of role: Employee.skillList, could not initialize proxy - no Session
+main                  INFO ManyToManyEmployeeSkillFetchDemo Start
+main                 DEBUG ManyToManyEmployeeSkillFetchDemo Employee:Employee [id=1, name=John Smith]
+main                 DEBUG ManyToManyEmployeeSkillFetchDemo Skills:[Skill [id=1, name=Java], Skill [id=2, name=SQL]]
+main                  INFO ManyToManyEmployeeSkillFetchDemo End

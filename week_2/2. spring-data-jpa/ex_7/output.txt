@@ -1,0 +1,8 @@
+main                  INFO OneToManyDepartmentEmployeeDemo Inside main
+main                  INFO OneToManyDepartmentEmployeeDemo Start
+main                 DEBUG OneToManyDepartmentEmployeeDemo department=Department [id=1, name=IT]
+main                 ERROR OneToManyDepartmentEmployeeDemo failed to lazily initialize a collection of role: Department.employeeList, could not initialize proxy - no Session
+main                  INFO OneToManyDepartmentEmployeeDemo Start
+main                 DEBUG OneToManyDepartmentEmployeeDemo department=Department [id=1, name=IT]
+main                 DEBUG OneToManyDepartmentEmployeeDemo employeeList=[Employee [id=1, name=John Smith], Employee [id=2, name=Priya Nair]]
+main                  INFO OneToManyDepartmentEmployeeDemo End
