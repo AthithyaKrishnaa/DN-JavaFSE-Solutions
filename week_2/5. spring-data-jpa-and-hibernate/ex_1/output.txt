@@ -1,0 +1,22 @@
+pom.xml:
+<project>
+  <groupId>com.company</groupId>
+  <artifactId>EmployeeManagementSystem</artifactId>
+  <version>1.0.0</version>
+  <dependencies>
+    <dependency><artifactId>spring-boot-starter-data-jpa</artifactId></dependency>
+    <dependency><artifactId>h2</artifactId></dependency>
+    <dependency><artifactId>spring-boot-starter-web</artifactId></dependency>
+    <dependency><artifactId>lombok</artifactId></dependency>
+  </dependencies>
+</project>
+
+application.properties:
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+Connecting to jdbc:h2:mem:testdb with driver org.h2.Driver as sa
+
+EmployeeManagementSystem started, H2 connection established: true

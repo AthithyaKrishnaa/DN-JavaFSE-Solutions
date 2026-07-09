@@ -1,0 +1,9 @@
+Loading configuration:
+<beans>
+  <bean id="bookRepository" class="com.library.repository.BookRepository"/>
+  <bean id="bookService" class="com.library.service.BookService">
+    <property name="bookRepository" ref="bookRepository"/>
+  </bean>
+</beans>
+Injected BookRepository into BookService via setter
+fetchBook(1) -> The Alchemist

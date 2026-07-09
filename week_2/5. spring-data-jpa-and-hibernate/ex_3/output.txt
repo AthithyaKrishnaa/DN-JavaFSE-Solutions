@@ -1,0 +1,4 @@
+findByName("Engineering") -> Department{id=1, name='Engineering'}
+findByDepartmentName("Engineering") -> [Employee{id=1, name='Alice', email='alice@company.com', department='Engineering'}, Employee{id=2, name='Bob', email='bob@company.com', department='Engineering'}]
+findByEmail("bob@company.com") -> Employee{id=2, name='Bob', email='bob@company.com', department='Engineering'}
+findAll() employees -> [Employee{id=1, name='Alice', email='alice@company.com', department='Engineering'}, Employee{id=2, name='Bob', email='bob@company.com', department='Engineering'}]

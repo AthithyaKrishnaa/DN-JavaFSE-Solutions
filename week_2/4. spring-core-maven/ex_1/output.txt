@@ -1,0 +1,22 @@
+pom.xml:
+<project>
+  <groupId>com.library</groupId>
+  <artifactId>LibraryManagement</artifactId>
+  <version>1.0.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.3.30</version>
+    </dependency>
+  </dependencies>
+</project>
+
+Loading configuration:
+<beans>
+  <bean id="bookRepository" class="com.library.repository.BookRepository"/>
+  <bean id="bookService" class="com.library.service.BookService"/>
+</beans>
+Registered beans: [bookRepository, bookService]
+BookRepository is wired and ready
+BookService bean loaded successfully

@@ -1,0 +1,7 @@
+Interface-based projection, salary > 70000:
+   EmployeeNameOnly{name='Alice'}
+   EmployeeNameOnly{name='Carol'}
+Class-based projection, email containing "company":
+   EmployeeSummary{name='Alice', email='alice@company.com'}
+   EmployeeSummary{name='Bob', email='bob@company.com'}
+   EmployeeSummary{name='Carol', email='carol@company.com'}

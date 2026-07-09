@@ -1,0 +1,7 @@
+Mapping: @Entity @Table(name="department") class Department { @Id @GeneratedValue Long id; String name; @OneToMany(mappedBy="department") List<Employee> employees; }
+Mapping: @Entity @Table(name="employee") class Employee { @Id @GeneratedValue Long id; String name; String email; @ManyToOne @JoinColumn(name="department_id") Department department; }
+
+Department{id=1, name='Engineering'}
+Employees in Engineering:
+   Employee{id=1, name='Alice', email='alice@company.com', department=Engineering}
+   Employee{id=2, name='Bob', email='bob@company.com', department=Engineering}

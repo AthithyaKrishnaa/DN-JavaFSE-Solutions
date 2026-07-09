@@ -1,0 +1,16 @@
+hibernate properties:
+hibernate.dialect=org.hibernate.dialect.H2Dialect
+hibernate.jdbc.batch_size=25
+hibernate.order_inserts=true
+hibernate.order_updates=true
+
+@DynamicUpdate class Employee { ... } -> only changed columns included in UPDATE statements
+save() -> Employee{id=1, name='Employee1'}
+save() -> Employee{id=2, name='Employee2'}
+[Hibernate] flushing batch #1 (2 pending statement(s) since last flush accounted)
+save() -> Employee{id=3, name='Employee3'}
+save() -> Employee{id=4, name='Employee4'}
+[Hibernate] flushing batch #2 (4 pending statement(s) since last flush accounted)
+save() -> Employee{id=5, name='Employee5'}
+[Hibernate] flushing batch #3 (5 pending statement(s) since last flush accounted)
+Session closed, total flush operations: 3

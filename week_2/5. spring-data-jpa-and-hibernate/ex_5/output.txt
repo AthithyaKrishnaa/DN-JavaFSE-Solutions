@@ -1,0 +1,6 @@
+findByDepartmentName("Engineering") -> [Employee{id=1, name='Alice', department='Engineering', salary=95000.0}, Employee{id=2, name='Bob', department='Engineering', salary=65000.0}]
+findByNameContaining("ar") -> [Employee{id=3, name='Carol', department='Sales', salary=72000.0}]
+Executing @Query("SELECT e FROM Employee e WHERE e.salary > :threshold") with threshold=70000.0
+customQuery(...) -> [Employee{id=1, name='Alice', department='Engineering', salary=95000.0}, Employee{id=3, name='Carol', department='Sales', salary=72000.0}]
+Executing @NamedQuery Employee.findHighEarners -> SELECT e FROM Employee e WHERE e.salary > :threshold
+runNamedQuery(...) -> [Employee{id=1, name='Alice', department='Engineering', salary=95000.0}]

@@ -1,0 +1,13 @@
+POST /api/departments
+GET /api/departments
+[Department{id=1, name='Engineering'}]
+POST /api/employees
+POST /api/employees
+GET /api/employees
+[Employee{id=1, name='Alice', email='alice@company.com'}, Employee{id=2, name='Bob', email='bob@company.com'}]
+PUT /api/employees/1
+GET /api/employees
+[Employee{id=1, name='Alice Smith', email='alice.smith@company.com'}, Employee{id=2, name='Bob', email='bob@company.com'}]
+DELETE /api/employees/2
+GET /api/employees
+[Employee{id=1, name='Alice Smith', email='alice.smith@company.com'}]

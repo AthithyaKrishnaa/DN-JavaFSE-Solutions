@@ -1,0 +1,11 @@
+Loading configuration:
+<beans>
+  <bean id="bookRepository" class="com.library.repository.BookRepository"/>
+  <bean id="auditRepository" class="com.library.repository.AuditRepository"/>
+  <bean id="bookService" class="com.library.service.BookService">
+    <constructor-arg ref="bookRepository"/>
+    <property name="auditRepository" ref="auditRepository"/>
+  </bean>
+</beans>
+[Audit] borrowed War and Peace
+borrowBook() -> War and Peace

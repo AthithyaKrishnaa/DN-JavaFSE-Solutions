@@ -1,0 +1,9 @@
+Loading configuration:
+<beans>
+  <aop:aspectj-autoproxy proxy-target-class="true"/>
+  <bean id="loggingAspect" class="com.library.aspect.LoggingAspect"/>
+  <bean id="bookService" class="com.library.service.BookService"/>
+</beans>
+[LoggingAspect] Before advice: about to call removeBook()
+[LoggingAspect] After advice: completed removeBook()
+Removed book: Moby Dick

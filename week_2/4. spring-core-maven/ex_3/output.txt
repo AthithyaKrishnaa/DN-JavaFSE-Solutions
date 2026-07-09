@@ -1,0 +1,9 @@
+Loading configuration:
+<beans>
+  <aop:aspectj-autoproxy/>
+  <bean id="loggingAspect" class="com.library.aspect.LoggingAspect"/>
+  <bean id="bookService" class="com.library.service.BookService"/>
+</beans>
+[LoggingAspect] before addBook()
+[LoggingAspect] after addBook() executed in 25ms
+Added book: Clean Code

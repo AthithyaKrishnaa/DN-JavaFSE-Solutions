@@ -1,0 +1,5 @@
+@EnableJpaAuditing configured, AuditorAware<String> bean registered
+@PrePersist -> stamped createdDate/createdBy on Alice
+Employee{id=1, name='Alice', createdBy='system', lastModifiedBy='system', createdDate=2026-07-09T04:42:11.005333091, lastModifiedDate=2026-07-09T04:42:11.005333091}
+@PreUpdate -> stamped lastModifiedDate/lastModifiedBy on Alice Smith
+Employee{id=1, name='Alice Smith', createdBy='system', lastModifiedBy='system', createdDate=2026-07-09T04:42:11.005333091, lastModifiedDate=2026-07-09T04:42:11.045680392}

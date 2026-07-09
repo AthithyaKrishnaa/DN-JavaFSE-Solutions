@@ -1,0 +1,12 @@
+application.properties:
+app.datasource.primary.url=jdbc:h2:mem:employeedb
+app.datasource.primary.driver-class-name=org.h2.Driver
+app.datasource.primary.username=sa
+app.datasource.secondary.url=jdbc:h2:mem:reportingdb
+app.datasource.secondary.driver-class-name=org.h2.Driver
+app.datasource.secondary.username=sa
+
+@Primary @Bean primaryDataSource() -> DataSourceProperties{url='jdbc:h2:mem:employeedb', driverClassName='org.h2.Driver', username='sa'}
+@Bean secondaryDataSource() -> DataSourceProperties{url='jdbc:h2:mem:reportingdb', driverClassName='org.h2.Driver', username='sa'}
+
+EmployeeManagementSystem auto-configured 2 data source(s)
