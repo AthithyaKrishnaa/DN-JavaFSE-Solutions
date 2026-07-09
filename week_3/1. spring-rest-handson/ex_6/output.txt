@@ -1,0 +1,32 @@
+main                  INFO SpringLearnApplication    START
+Loading country.xml:
+<beans>
+  <bean id="in" class="com.cognizant.springlearn.Country">
+    <property name="code" value="IN" />
+    <property name="name" value="India" />
+  </bean>
+  <bean id="us" class="com.cognizant.springlearn.Country">
+    <property name="code" value="US" />
+    <property name="name" value="United States" />
+  </bean>
+  <bean id="de" class="com.cognizant.springlearn.Country">
+    <property name="code" value="DE" />
+    <property name="name" value="Germany" />
+  </bean>
+  <bean id="jp" class="com.cognizant.springlearn.Country">
+    <property name="code" value="JP" />
+    <property name="name" value="Japan" />
+  </bean>
+  <bean id="countryList" class="java.util.ArrayList">
+    <constructor-arg>
+      <list>
+        <ref bean="in"/>
+        <ref bean="us"/>
+        <ref bean="de"/>
+        <ref bean="jp"/>
+      </list>
+    </constructor-arg>
+  </bean>
+</beans>
+main                 DEBUG SpringLearnApplication    Countries : [Country [code=IN, name=India], Country [code=US, name=United States], Country [code=DE, name=Germany], Country [code=JP, name=Japan]]
+main                  INFO SpringLearnApplication    END

@@ -1,0 +1,12 @@
+GET /countries HTTP/1.1
+main                  INFO CountryController         START getAllCountries()
+main                  INFO CountryController         END getAllCountries()
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  { "code": "IN", "name": "India"},
+  { "code": "US", "name": "United States"},
+  { "code": "JP", "name": "Japan"},
+  { "code": "DE", "name": "Germany"}
+]

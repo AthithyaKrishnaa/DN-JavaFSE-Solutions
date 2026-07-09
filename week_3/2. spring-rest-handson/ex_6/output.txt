@@ -1,0 +1,10 @@
+PASS - contextLoads - countryController is not null
+PASS - testGetCountry - status().isOk() -> 200
+PASS - testGetCountry - $.code exists -> IN
+PASS - testGetCountry - $.code value("IN") -> IN
+PASS - testGetCountry - $.name exists -> India
+PASS - testGetCountry - $.name value("India") -> India
+PASS - testGetCountryException - status().isBadRequest() -> 400
+PASS - testGetCountryException - status().reason("Country Not found") -> Country Not found
+
+Tests run: 8, Passed: 8, Failed: 0

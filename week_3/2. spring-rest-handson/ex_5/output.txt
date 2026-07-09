@@ -1,0 +1,25 @@
+GET /country/in HTTP/1.1
+main                  INFO CountryController         START getCountry(in)
+main                 DEBUG CountryService            Looking up country code: in
+main                  INFO CountryController         END getCountry(in)
+HTTP/1.1 200
+Content-Type: application/json
+
+{
+  "code": "IN",
+  "name": "India"
+}
+
+GET /country/az HTTP/1.1
+main                  INFO CountryController         START getCountry(az)
+main                 DEBUG CountryService            Looking up country code: az
+HTTP/1.1 404
+Content-Type: application/json
+
+{
+"timestamp": "2026-07-09T05:58:40.437046637Z",
+"status": 404,
+"error": "Not Found",
+"message": "Country not found",
+"path": "/country/az"
+}

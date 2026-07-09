@@ -1,0 +1,11 @@
+Loading country.xml:
+<beans>
+  <bean id="country" class="com.cognizant.springlearn.Country">
+    <property name="code" value="IN" />
+    <property name="name" value="India" />
+  </bean>
+</beans>
+main                 DEBUG Country                   Inside Country Constructor.
+main                 DEBUG Country                   Inside setCode() -> IN
+main                 DEBUG Country                   Inside setName() -> India
+main                 DEBUG SpringLearnApplication    Country : Country [code=IN, name=India]

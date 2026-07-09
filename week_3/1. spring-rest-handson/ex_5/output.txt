@@ -1,0 +1,11 @@
+
+-- Singleton scope --
+Loading country.xml with scope="singleton"
+main                 DEBUG Country                   Inside Country Constructor.
+main                 DEBUG SpringLearnApplication    country == anotherCountry -> true
+
+-- Prototype scope --
+Loading country.xml with scope="prototype"
+main                 DEBUG Country                   Inside Country Constructor.
+main                 DEBUG Country                   Inside Country Constructor.
+main                 DEBUG SpringLearnApplication    country == anotherCountry -> false

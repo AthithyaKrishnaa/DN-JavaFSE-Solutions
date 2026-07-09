@@ -1,0 +1,11 @@
+GET /country HTTP/1.1
+main                  INFO CountryController         START getCountryIndia()
+main                 DEBUG CountryController         Country loaded from spring xml configuration: IN
+main                  INFO CountryController         END getCountryIndia()
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "code": "IN",
+  "name": "India"
+}

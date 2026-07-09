@@ -1,0 +1,20 @@
+main                  INFO SpringLearnApplication    START main()
+Starting SpringLearnApplication using Spring Boot
+Embedded Tomcat started on port 8080
+main                  INFO SpringLearnApplication    SpringLearnApplication started successfully
+main                  INFO SpringLearnApplication    END main()
+
+pom.xml:
+<project>
+  <groupId>com.cognizant</groupId>
+  <artifactId>spring-learn</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <dependency><artifactId>spring-boot-starter-web</artifactId></dependency>
+    <dependency><artifactId>spring-boot-devtools</artifactId><scope>runtime</scope></dependency>
+  </dependencies>
+</project>
+
+src/main/java      -> application code
+src/main/resources -> application configuration
+src/test/java      -> test code
