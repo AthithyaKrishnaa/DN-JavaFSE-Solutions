@@ -1,0 +1,10 @@
+main                  INFO EmployeeUpdateServiceDemo      Inside main
+main                  INFO EmployeeUpdateServiceDemo      PUT /employees invoked, annotation=@PutMapping
+main                  INFO EmployeeUpdateServiceDemo      update result=Employee{id=1, name=Arun Kumar, salary=52000.0}
+main                  INFO EmployeeUpdateServiceDemo      getAllEmployees after update=[Employee{id=1, name=Arun Kumar, salary=52000.0}, Employee{id=2, name=Divya Sundaram, salary=65000.0}]
+main                  INFO EmployeeUpdateServiceDemo      PUT /employees invoked, annotation=@PutMapping
+main                  INFO EmployeeUpdateServiceDemo      update result (not found)={timestamp=Fri Jul 10 03:08:43 UTC 2026, status=404, error=Not Found, message=Employee with id 99 not found}
+main                  INFO EmployeeUpdateServiceDemo      MockMvc test: PUT /employees with id='abc' (non numeric)
+main                  INFO EmployeeUpdateServiceDemo      PUT /employees invoked with non numeric id, dispatched to global exception handler
+main                  INFO EmployeeUpdateServiceDemo      MockMvc expected status=400, response body={timestamp=Fri Jul 10 03:08:43 UTC 2026, status=400, error=Bad Request, message=Incorrect format for field 'id'}
+main                  INFO EmployeeUpdateServiceDemo      End

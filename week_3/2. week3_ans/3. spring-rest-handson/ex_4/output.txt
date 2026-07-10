@@ -1,0 +1,6 @@
+main                  INFO DepartmentXmlConfigDaoDemo     Inside main
+main                 DEBUG DepartmentXmlConfigDaoDemo     DEPARTMENT_LIST size=3
+main                  INFO DepartmentXmlConfigDaoDemo     Department{deptId=D001, deptName=Engineering}
+main                  INFO DepartmentXmlConfigDaoDemo     Department{deptId=D002, deptName=Human Resources}
+main                  INFO DepartmentXmlConfigDaoDemo     Department{deptId=D003, deptName=Finance}
+main                  INFO DepartmentXmlConfigDaoDemo     End

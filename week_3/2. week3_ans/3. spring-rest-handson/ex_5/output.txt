@@ -1,0 +1,7 @@
+main                  INFO DepartmentControllerGetAllDepartmentsDemo Inside main
+main                  INFO DepartmentControllerGetAllDepartmentsDemo Postman request: GET http://localhost:8080/departments
+main                  INFO DepartmentControllerGetAllDepartmentsDemo GET /departments invoked, annotation=@GetMapping("/departments")
+main                 DEBUG DepartmentControllerGetAllDepartmentsDemo response status=200, department count=3
+main                  INFO DepartmentControllerGetAllDepartmentsDemo Postman response body: [{"deptId":"D001","deptName":"Engineering"},{"deptId":"D002","deptName":"Human Resources"},{"deptId":"D003","deptName":"Finance"}]
+main                  INFO DepartmentControllerGetAllDepartmentsDemo Verifying logs: department service and dao calls were logged above via LOGGER.info/debug
+main                  INFO DepartmentControllerGetAllDepartmentsDemo End

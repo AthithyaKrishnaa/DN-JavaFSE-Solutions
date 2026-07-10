@@ -1,0 +1,6 @@
+main                  INFO BasicAuthBase64Demo            Inside main
+main                  INFO BasicAuthBase64Demo            curl command: curl -s -v -u admin:pwd http://localhost:8090/countries
+main                  INFO BasicAuthBase64Demo            Authorization request header: Basic YWRtaW46cHdk
+main                  INFO BasicAuthBase64Demo            Base64 decode of 'YWRtaW46cHdk' = 'admin:pwd'
+main                  INFO BasicAuthBase64Demo            conclusion: Base64 is reversible encoding, not encryption; credentials are exposed on the wire
+main                  INFO BasicAuthBase64Demo            End

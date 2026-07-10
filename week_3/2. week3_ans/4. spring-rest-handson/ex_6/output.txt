@@ -1,0 +1,8 @@
+main                  INFO EmployeeValidationBeansDemo    Inside main
+main                  INFO EmployeeValidationBeansDemo    validateSkill(valid)=[]
+main                  INFO EmployeeValidationBeansDemo    validateSkill(invalid)=[Skill id should not be null, Skill name should not be blank]
+main                  INFO EmployeeValidationBeansDemo    validateDepartment(valid)=[]
+main                  INFO EmployeeValidationBeansDemo    validateDepartment(invalid)=[Department id should not be null, Department name should not be blank]
+main                  INFO EmployeeValidationBeansDemo    validateEmployee(valid)=[]
+main                  INFO EmployeeValidationBeansDemo    validateEmployee(invalid)=[Employee id should not be null, Employee name should not be blank, Employee salary should be zero or above, Employee permanent should not be null, Employee dateOfBirth should match pattern dd/MM/yyyy]
+main                  INFO EmployeeValidationBeansDemo    End

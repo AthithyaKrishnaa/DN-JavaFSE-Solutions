@@ -1,0 +1,8 @@
+main                  INFO AuthenticationControllerGenerateJwtDemo Inside main
+main                  INFO AuthenticationControllerGenerateJwtDemo curl command: curl -s -u user:pwd http://localhost:8090/authenticate
+main                  INFO AuthenticationControllerGenerateJwtDemo Start
+main                 DEBUG AuthenticationControllerGenerateJwtDemo authHeader=Basic dXNlcjpwd2Q=
+main                 DEBUG AuthenticationControllerGenerateJwtDemo generated token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNjU0MTk0NTk3LCJleHAiOjE3ODM2NTUzOTQ1OTd9._OKBJ24XRsiSZNqx_y_pGgBbveLm74BFBtQCmv6LOgI
+main                  INFO AuthenticationControllerGenerateJwtDemo End
+main                  INFO AuthenticationControllerGenerateJwtDemo response={token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNjU0MTk0NTk3LCJleHAiOjE3ODM2NTUzOTQ1OTd9._OKBJ24XRsiSZNqx_y_pGgBbveLm74BFBtQCmv6LOgI}
+main                  INFO AuthenticationControllerGenerateJwtDemo End

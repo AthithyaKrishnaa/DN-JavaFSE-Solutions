@@ -1,0 +1,7 @@
+main                  INFO JwtStructureDemo               Inside main
+main                  INFO JwtStructureDemo               header json={"alg":"HS256"} -> encoded=eyJhbGciOiJIUzI1NiJ9
+main                  INFO JwtStructureDemo               payload json={"sub":"1234567890","name":"John Doe","admin":true} -> encoded=eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9
+main                  INFO JwtStructureDemo               signature computed with HMACSHA256 and secretkey 'secretkey' = vcpBieAD2XeevcStDfJtm8E7nMxCn98FsHoJuun0U1g
+main                  INFO JwtStructureDemo               generated JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.vcpBieAD2XeevcStDfJtm8E7nMxCn98FsHoJuun0U1g
+main                  INFO JwtStructureDemo               compare this token against the Encoded section on https://jwt.io using the same header, payload and secretkey
+main                  INFO JwtStructureDemo               End

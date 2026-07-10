@@ -1,0 +1,9 @@
+main                  INFO SecurityConfigBasicAuthDemo    Inside main
+main                  INFO SecurityConfigBasicAuthDemo    Using web security: password generated for user 'user', check application logs
+main                  INFO SecurityConfigBasicAuthDemo    Using generated security password: 9911ea0a-0d1f-4530-bd89-50df9d1eb576
+main                  INFO SecurityConfigBasicAuthDemo    curl command: curl -s http://localhost:8090/countries
+main                  INFO SecurityConfigBasicAuthDemo    response={status=401, error=Unauthorized, message=Unauthorized, path=/countries}
+main                  INFO SecurityConfigBasicAuthDemo    curl command: curl -s -u user:9911ea0a-0d1f-4530-bd89-50df9d1eb576 http://localhost:8090/countries
+main                  INFO SecurityConfigBasicAuthDemo    HTTP/1.1 200
+main                  INFO SecurityConfigBasicAuthDemo    response=[{"code":"US","name":"United States"}, {"code":"DE","name":"Germany"}, {"code":"IN","name":"India"}, {"code":"JP","name":"Japan"}]
+main                  INFO SecurityConfigBasicAuthDemo    End

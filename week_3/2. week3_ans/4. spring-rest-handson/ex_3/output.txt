@@ -1,0 +1,14 @@
+main                  INFO CountryControllerRequestBodyDemo Inside main
+main                  INFO CountryControllerRequestBodyDemo curl command: curl -i -H 'Content-Type: application/json' -X POST -s -d '{"code":"IN","name":"India"}' http://localhost:8090/countries
+main                  INFO CountryControllerRequestBodyDemo Start
+main                  INFO CountryControllerRequestBodyDemo country details=Country{code=IN, name=India}
+main                  INFO CountryControllerRequestBodyDemo HTTP/1.1 200
+main                  INFO CountryControllerRequestBodyDemo Content-Type: application/json;charset=UTF-8
+main                  INFO CountryControllerRequestBodyDemo response body={"code":"IN","name":"India"}
+main                  INFO CountryControllerRequestBodyDemo curl command: curl -i -H 'Content-Type: application/json' -X POST -s -d '{"code":"IN","nae":"India"}' http://localhost:8090/countries
+main                  INFO CountryControllerRequestBodyDemo Start
+main                  INFO CountryControllerRequestBodyDemo country details=Country{code=IN, name=null}
+main                  INFO CountryControllerRequestBodyDemo HTTP/1.1 200
+main                  INFO CountryControllerRequestBodyDemo Content-Type: application/json;charset=UTF-8
+main                  INFO CountryControllerRequestBodyDemo response body={"code":"IN","name":null}
+main                  INFO CountryControllerRequestBodyDemo End

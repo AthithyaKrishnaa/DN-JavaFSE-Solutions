@@ -1,0 +1,6 @@
+main                  INFO CountryControllerAddCountryStartLoggerDemo Inside main
+main                  INFO CountryControllerAddCountryStartLoggerDemo curl command: curl -i -X POST -s http://localhost:8090/countries
+main                  INFO CountryControllerAddCountryStartLoggerDemo Start
+main                  INFO CountryControllerAddCountryStartLoggerDemo HTTP/1.1 200
+main                  INFO CountryControllerAddCountryStartLoggerDemo Content-Length: 0
+main                  INFO CountryControllerAddCountryStartLoggerDemo End

@@ -1,0 +1,10 @@
+main                  INFO AuthenticationControllerGetUserDemo Inside main
+main                  INFO AuthenticationControllerGetUserDemo curl command: curl -s -u user:pwd http://localhost:8090/authenticate
+main                  INFO AuthenticationControllerGetUserDemo Start
+main                 DEBUG AuthenticationControllerGetUserDemo authHeader=Basic dXNlcjpwd2Q=
+main                 DEBUG AuthenticationControllerGetUserDemo encodedCredentials=dXNlcjpwd2Q=
+main                 DEBUG AuthenticationControllerGetUserDemo decodedCredentials=user:pwd
+main                 DEBUG AuthenticationControllerGetUserDemo user=user
+main                  INFO AuthenticationControllerGetUserDemo End
+main                  INFO AuthenticationControllerGetUserDemo response={token=}
+main                  INFO AuthenticationControllerGetUserDemo End

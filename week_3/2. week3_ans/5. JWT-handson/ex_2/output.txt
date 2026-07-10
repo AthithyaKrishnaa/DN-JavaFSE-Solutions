@@ -1,0 +1,9 @@
+main                  INFO SecurityConfigRolesDemo        Inside main
+main                  INFO SecurityConfigRolesDemo        Start
+main                  INFO SecurityConfigRolesDemo        curl command: curl -s -u user:pwd http://localhost:8090/countries
+main                  INFO SecurityConfigRolesDemo        HTTP/1.1 200, response=[{"code":"US","name":"United States"}, {"code":"DE","name":"Germany"}, {"code":"IN","name":"India"}, {"code":"JP","name":"Japan"}]
+main                  INFO SecurityConfigRolesDemo        curl command: curl -s -u user:pwd1 http://localhost:8090/countries
+main                  INFO SecurityConfigRolesDemo        response={status=401, error=Unauthorized, message=Unauthorized, path=/countries}
+main                  INFO SecurityConfigRolesDemo        curl command: curl -s -u admin:pwd http://localhost:8090/countries
+main                  INFO SecurityConfigRolesDemo        response={status=403, error=Forbidden, message=Forbidden, path=/countries}
+main                  INFO SecurityConfigRolesDemo        End

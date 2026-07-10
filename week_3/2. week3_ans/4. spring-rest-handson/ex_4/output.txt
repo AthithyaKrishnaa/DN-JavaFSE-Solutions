@@ -1,0 +1,10 @@
+main                  INFO CountryValidationManualDemo    Inside main
+main                  INFO CountryValidationManualDemo    curl command: curl -i -H 'Content-Type: application/json' -X POST -s -d '{"code":"IN","name":"India"}' http://localhost:8090/countries
+main                  INFO CountryValidationManualDemo    Start
+main                  INFO CountryValidationManualDemo    country details=Country{code=IN, name=India}
+main                  INFO CountryValidationManualDemo    HTTP/1.1 200, response body=Country{code=IN, name=India}
+main                  INFO CountryValidationManualDemo    curl command: curl -i -H 'Content-Type: application/json' -X POST -s -d '{"code":"I","name":"India"}' http://localhost:8090/countries
+main                  INFO CountryValidationManualDemo    Start
+main                  INFO CountryValidationManualDemo    HTTP/1.1 400
+main                  INFO CountryValidationManualDemo    error message=[Country code should be 2 characters]
+main                  INFO CountryValidationManualDemo    End

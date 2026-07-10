@@ -1,0 +1,7 @@
+main                  INFO GlobalExceptionHandlerDemo     Inside main
+main                  INFO GlobalExceptionHandlerDemo     curl command: curl -i -H 'Content-Type: application/json' -X POST -s -d '{"code":"I","name":"India"}' http://localhost:8090/countries
+main                  INFO GlobalExceptionHandlerDemo     Start
+main                  INFO GlobalExceptionHandlerDemo     End
+main                  INFO GlobalExceptionHandlerDemo     HTTP/1.1 400, response body={timestamp=Fri Jul 10 03:08:40 UTC 2026, status=400, errors=[Country code should be 2 characters]}
+main                  INFO GlobalExceptionHandlerDemo     note: CountryController logs are absent, confirming the global exception handler intercepted the request
+main                  INFO GlobalExceptionHandlerDemo     End

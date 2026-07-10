@@ -1,0 +1,13 @@
+main                  INFO CountryControllerRestStandardsDemo Inside main, base RequestMapping=/countries
+main                  INFO CountryControllerRestStandardsDemo GET /countries invoked, annotation=@GetMapping
+main                  INFO CountryControllerRestStandardsDemo getAllCountries result: [Country{code=IN, name=India}, Country{code=US, name=United States of America}]
+main                  INFO CountryControllerRestStandardsDemo GET /countries/IN invoked, annotation=@GetMapping("/{id}")
+main                  INFO CountryControllerRestStandardsDemo getCountry(IN) result: Country{code=IN, name=India}
+main                  INFO CountryControllerRestStandardsDemo POST /countries invoked, annotation=@PostMapping
+main                  INFO CountryControllerRestStandardsDemo addCountry result: Country{code=SG, name=Singapore}
+main                  INFO CountryControllerRestStandardsDemo PUT /countries invoked, annotation=@PutMapping
+main                  INFO CountryControllerRestStandardsDemo updateCountry result: Country{code=SG, name=Republic of Singapore}
+main                  INFO CountryControllerRestStandardsDemo DELETE /countries/SG invoked, annotation=@DeleteMapping("/{id}")
+main                  INFO CountryControllerRestStandardsDemo GET /countries invoked, annotation=@GetMapping
+main                  INFO CountryControllerRestStandardsDemo getAllCountries after delete: [Country{code=IN, name=India}, Country{code=US, name=United States of America}]
+main                  INFO CountryControllerRestStandardsDemo End

@@ -1,0 +1,16 @@
+main                  INFO JwtAuthorizationFilterDemo     Inside main
+main                  INFO JwtAuthorizationFilterDemo     Start
+main                 DEBUG JwtAuthorizationFilterDemo     authenticationManager=AuthenticationManager
+main                  INFO JwtAuthorizationFilterDemo     curl command: curl -s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNjU0MTk1OTUyLCJleHAiOjE3ODM2NTUzOTU5NTJ9.whcTQQ3gMqG2WFMv6B8ao5yoIISSQZEp8vsbdT8QXLM" http://localhost:8090/countries
+main                  INFO JwtAuthorizationFilterDemo     Start
+main                 DEBUG JwtAuthorizationFilterDemo     header=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNjU0MTk1OTUyLCJleHAiOjE3ODM2NTUzOTU5NTJ9.whcTQQ3gMqG2WFMv6B8ao5yoIISSQZEp8vsbdT8QXLM
+main                 DEBUG JwtAuthorizationFilterDemo     user=user
+main                  INFO JwtAuthorizationFilterDemo     End
+main                  INFO JwtAuthorizationFilterDemo     authorized=true, SecurityContextHolder.getAuthentication()=UsernamePasswordAuthenticationToken{principal=user}
+main                  INFO JwtAuthorizationFilterDemo     curl command: curl -s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNjU0MTk1OTUyLCJleHAiOjE3ODM2NTUzOTU5NTJ9.whcTQQ3gMqG2WFMv6B8ao5yoIISSQZEp8vsbdT8abcd" http://localhost:8090/countries
+main                  INFO JwtAuthorizationFilterDemo     Start
+main                 DEBUG JwtAuthorizationFilterDemo     header=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNjU0MTk1OTUyLCJleHAiOjE3ODM2NTUzOTU5NTJ9.whcTQQ3gMqG2WFMv6B8ao5yoIISSQZEp8vsbdT8abcd
+main                  INFO JwtAuthorizationFilterDemo     JwtException: signature mismatch
+main                  INFO JwtAuthorizationFilterDemo     invalid token, request remains unauthenticated
+main                  INFO JwtAuthorizationFilterDemo     authorized=false, SecurityContextHolder.getAuthentication()=null
+main                  INFO JwtAuthorizationFilterDemo     End

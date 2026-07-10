@@ -1,0 +1,13 @@
+main                  INFO EmployeeXmlConfigDaoDemo       Inside main
+main                 DEBUG EmployeeXmlConfigDaoDemo       departments loaded from xml config, count=3
+main                  INFO EmployeeXmlConfigDaoDemo       Department{deptId=D001, deptName=Engineering}
+main                  INFO EmployeeXmlConfigDaoDemo       Department{deptId=D002, deptName=Human Resources}
+main                  INFO EmployeeXmlConfigDaoDemo       Department{deptId=D003, deptName=Finance}
+main                 DEBUG EmployeeXmlConfigDaoDemo       EMPLOYEE_LIST size=6
+main                  INFO EmployeeXmlConfigDaoDemo       Employee{empId=E001, empName=Arun Kumar, designation=Software Engineer, salary=45000.0, departmentName=Engineering}
+main                  INFO EmployeeXmlConfigDaoDemo       Employee{empId=E002, empName=Divya Sundaram, designation=Senior Software Engineer, salary=65000.0, departmentName=Engineering}
+main                  INFO EmployeeXmlConfigDaoDemo       Employee{empId=E003, empName=Karthik Raja, designation=HR Executive, salary=38000.0, departmentName=Human Resources}
+main                  INFO EmployeeXmlConfigDaoDemo       Employee{empId=E004, empName=Priya Natarajan, designation=HR Manager, salary=72000.0, departmentName=Human Resources}
+main                  INFO EmployeeXmlConfigDaoDemo       Employee{empId=E005, empName=Suresh Babu, designation=Financial Analyst, salary=50000.0, departmentName=Finance}
+main                  INFO EmployeeXmlConfigDaoDemo       Employee{empId=E006, empName=Meena Ramesh, designation=Finance Manager, salary=78000.0, departmentName=Finance}
+main                  INFO EmployeeXmlConfigDaoDemo       End

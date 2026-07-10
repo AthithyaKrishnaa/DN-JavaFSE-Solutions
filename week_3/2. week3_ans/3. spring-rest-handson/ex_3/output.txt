@@ -1,0 +1,6 @@
+main                  INFO EmployeeControllerGetAllEmployeesDemo Inside main
+main                  INFO EmployeeControllerGetAllEmployeesDemo Postman request: GET http://localhost:8080/employees
+main                  INFO EmployeeControllerGetAllEmployeesDemo GET /employees invoked, annotation=@GetMapping("/employees")
+main                 DEBUG EmployeeControllerGetAllEmployeesDemo response status=200, employee count=4
+main                  INFO EmployeeControllerGetAllEmployeesDemo Postman response body: [{"empId":"E001","empName":"Arun Kumar","designation":"Software Engineer","salary":45000.0},{"empId":"E002","empName":"Divya Sundaram","designation":"Senior Software Engineer","salary":65000.0},{"empId":"E003","empName":"Karthik Raja","designation":"HR Executive","salary":38000.0},{"empId":"E004","empName":"Priya Natarajan","designation":"HR Manager","salary":72000.0}]
+main                  INFO EmployeeControllerGetAllEmployeesDemo End

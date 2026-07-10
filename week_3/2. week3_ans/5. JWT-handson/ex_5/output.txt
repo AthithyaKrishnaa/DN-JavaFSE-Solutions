@@ -1,0 +1,7 @@
+main                  INFO AuthenticationControllerStubDemo Inside main
+main                  INFO AuthenticationControllerStubDemo curl command: curl -s -u user:pwd http://localhost:8090/authenticate
+main                  INFO AuthenticationControllerStubDemo Start
+main                 DEBUG AuthenticationControllerStubDemo authHeader=Basic dXNlcjpwd2Q=
+main                  INFO AuthenticationControllerStubDemo End
+main                  INFO AuthenticationControllerStubDemo response={token=}
+main                  INFO AuthenticationControllerStubDemo End

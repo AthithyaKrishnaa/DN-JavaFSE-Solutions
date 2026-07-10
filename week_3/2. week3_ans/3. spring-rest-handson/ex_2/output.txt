@@ -1,0 +1,8 @@
+main                  INFO EmployeeServiceGetAllEmployeesDemo Inside main
+main                  INFO EmployeeServiceGetAllEmployeesDemo EmployeeService.getAllEmployees invoked, annotation=@Transactional
+main                 DEBUG EmployeeServiceGetAllEmployeesDemo employees fetched from dao, count=4
+main                  INFO EmployeeServiceGetAllEmployeesDemo Employee{empId=E001, empName=Arun Kumar, designation=Software Engineer, salary=45000.0}
+main                  INFO EmployeeServiceGetAllEmployeesDemo Employee{empId=E002, empName=Divya Sundaram, designation=Senior Software Engineer, salary=65000.0}
+main                  INFO EmployeeServiceGetAllEmployeesDemo Employee{empId=E003, empName=Karthik Raja, designation=HR Executive, salary=38000.0}
+main                  INFO EmployeeServiceGetAllEmployeesDemo Employee{empId=E004, empName=Priya Natarajan, designation=HR Manager, salary=72000.0}
+main                  INFO EmployeeServiceGetAllEmployeesDemo End

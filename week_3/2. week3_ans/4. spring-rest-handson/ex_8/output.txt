@@ -1,0 +1,7 @@
+main                  INFO EmployeeDeleteServiceDemo      Inside main
+main                  INFO EmployeeDeleteServiceDemo      getAllEmployees before delete=[Employee{id=1, name=Arun Kumar}, Employee{id=2, name=Divya Sundaram}, Employee{id=3, name=Karthik Raja}]
+main                  INFO EmployeeDeleteServiceDemo      DELETE /employees/2 invoked, annotation=@DeleteMapping("/{id}")
+main                  INFO EmployeeDeleteServiceDemo      getAllEmployees after delete=[Employee{id=1, name=Arun Kumar}, Employee{id=3, name=Karthik Raja}]
+main                  INFO EmployeeDeleteServiceDemo      DELETE /employees/99 invoked, annotation=@DeleteMapping("/{id}")
+main                  INFO EmployeeDeleteServiceDemo      caught EmployeeNotFoundException: Employee with id 99 not found
+main                  INFO EmployeeDeleteServiceDemo      End
