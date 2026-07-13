@@ -1,0 +1,22 @@
+main                  INFO PaymentCircuitBreakerDemo      Inside main
+main                  INFO PaymentCircuitBreakerDemo      thirdPartyPaymentApi config: slidingWindowSize=5, failureRateThreshold=50, slowCallDurationThresholdMs=2000
+main                  INFO PaymentCircuitBreakerDemo      calling third-party API POST https://payments.example.com/charge txnId=TXN-1001 (latency=300ms)
+main                  INFO PaymentCircuitBreakerDemo      result=payment confirmed for txnId=TXN-1001
+main                  INFO PaymentCircuitBreakerDemo      calling third-party API POST https://payments.example.com/charge txnId=TXN-1002 (latency=2500ms)
+main                  WARN PaymentCircuitBreakerDemo      call for txnId=TXN-1002 exceeded slow-call threshold (2500ms >= 2000ms)
+main                  INFO PaymentCircuitBreakerDemo      result=payment confirmed for txnId=TXN-1002
+main                  INFO PaymentCircuitBreakerDemo      calling third-party API POST https://payments.example.com/charge txnId=TXN-1003 (latency=2800ms)
+main                  WARN PaymentCircuitBreakerDemo      call for txnId=TXN-1003 exceeded slow-call threshold (2800ms >= 2000ms)
+main                  INFO PaymentCircuitBreakerDemo      result=payment confirmed for txnId=TXN-1003
+main                  INFO PaymentCircuitBreakerDemo      calling third-party API POST https://payments.example.com/charge txnId=TXN-1004 (latency=3000ms)
+main                  WARN PaymentCircuitBreakerDemo      fallback event #1 for circuit 'thirdPartyPaymentApi': downstream call failed for txnId=TXN-1004
+main                  INFO PaymentCircuitBreakerDemo      result=fallback: payment for txnId=TXN-1004 queued for retry
+main                  INFO PaymentCircuitBreakerDemo      calling third-party API POST https://payments.example.com/charge txnId=TXN-1005 (latency=2600ms)
+main                  INFO PaymentCircuitBreakerDemo      circuit 'thirdPartyPaymentApi' window full: failureRate=20%, slowCallRate=80%
+main                  WARN PaymentCircuitBreakerDemo      circuit 'thirdPartyPaymentApi' thresholds breached, transitioning to OPEN
+main                  WARN PaymentCircuitBreakerDemo      call for txnId=TXN-1005 exceeded slow-call threshold (2600ms >= 2000ms)
+main                  INFO PaymentCircuitBreakerDemo      result=payment confirmed for txnId=TXN-1005
+main                  WARN PaymentCircuitBreakerDemo      fallback event #2 for circuit 'thirdPartyPaymentApi': circuit OPEN, call short-circuited for txnId=TXN-1006
+main                  INFO PaymentCircuitBreakerDemo      result=fallback: payment for txnId=TXN-1006 queued for retry
+main                  INFO PaymentCircuitBreakerDemo      monitoring summary: total fallback events=2
+main                  INFO PaymentCircuitBreakerDemo      End

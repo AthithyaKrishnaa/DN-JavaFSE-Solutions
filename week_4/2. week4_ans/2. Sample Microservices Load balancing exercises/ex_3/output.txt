@@ -1,0 +1,41 @@
+main                  INFO ResilienceCircuitBreakerDemo   Inside main
+main                  INFO ResilienceCircuitBreakerDemo   exampleCircuitBreaker config: registerHealthIndicator=true, slidingWindowSize=10, failureRateThreshold=50
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=true, window=1/10, failureRate=0%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream response
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=true, window=2/10, failureRate=0%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream response
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=3/10, failureRate=33%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream error
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=4/10, failureRate=50%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream error
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=5/10, failureRate=60%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream error
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=6/10, failureRate=66%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream error
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=7/10, failureRate=71%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream error
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=true, window=8/10, failureRate=62%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream response
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=9/10, failureRate=66%
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream error
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' recorded call success=false, window=10/10, failureRate=70%
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' failureRate 70% reached threshold 50%, transitioning to OPEN
+main                  INFO ResilienceCircuitBreakerDemo   response=fallback response
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' is OPEN, call short-circuited
+main                  INFO ResilienceCircuitBreakerDemo   response=fallback response
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' wait duration elapsed, transitioning to HALF_OPEN
+main                  INFO ResilienceCircuitBreakerDemo   curl command: curl -s http://localhost:8080/example/orders
+main                  INFO ResilienceCircuitBreakerDemo   circuit 'exampleCircuitBreaker' trial call succeeded, transitioning to CLOSED
+main                  INFO ResilienceCircuitBreakerDemo   response=downstream response
+main                  INFO ResilienceCircuitBreakerDemo   End

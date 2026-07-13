@@ -1,0 +1,23 @@
+main                  INFO UserOrderManagementDemo        Inside main
+main                  INFO UserOrderManagementDemo        POST /api/users -> saved User{id=1, name=Athithya, email=athithya@example.com}
+main                  INFO UserOrderManagementDemo        POST /api/users -> saved User{id=2, name=Keshav, email=keshav@example.com}
+main                  INFO UserOrderManagementDemo        POST /api/orders -> validating userId=1 via WebClient GET http://user-service/api/users/1
+main                  INFO UserOrderManagementDemo        GET /api/users/1
+main                  INFO UserOrderManagementDemo        response=User{id=1, name=Athithya, email=athithya@example.com}
+main                  INFO UserOrderManagementDemo        order persisted Order{id=101, userId=1, item=Mechanical Keyboard, amount=3499.0} for Athithya
+main                  INFO UserOrderManagementDemo        POST /api/orders -> validating userId=2 via WebClient GET http://user-service/api/users/2
+main                  INFO UserOrderManagementDemo        GET /api/users/2
+main                  INFO UserOrderManagementDemo        response=User{id=2, name=Keshav, email=keshav@example.com}
+main                  INFO UserOrderManagementDemo        order persisted Order{id=102, userId=2, item=Wireless Mouse, amount=899.5} for Keshav
+main                  INFO UserOrderManagementDemo        POST /api/orders -> validating userId=1 via WebClient GET http://user-service/api/users/1
+main                  INFO UserOrderManagementDemo        GET /api/users/1
+main                  INFO UserOrderManagementDemo        response=User{id=1, name=Athithya, email=athithya@example.com}
+main                  INFO UserOrderManagementDemo        order persisted Order{id=103, userId=1, item=USB-C Hub, amount=1299.0} for Athithya
+main                  INFO UserOrderManagementDemo        POST /api/orders -> validating userId=5 via WebClient GET http://user-service/api/users/5
+main                  INFO UserOrderManagementDemo        GET /api/users/5
+main                  INFO UserOrderManagementDemo        response=null
+main                  INFO UserOrderManagementDemo        response=404 user not found, order rejected
+main                  INFO UserOrderManagementDemo        GET /api/orders?userId=1
+main                  INFO UserOrderManagementDemo          -> Order{id=101, userId=1, item=Mechanical Keyboard, amount=3499.0}
+main                  INFO UserOrderManagementDemo          -> Order{id=103, userId=1, item=USB-C Hub, amount=1299.0}
+main                  INFO UserOrderManagementDemo        End

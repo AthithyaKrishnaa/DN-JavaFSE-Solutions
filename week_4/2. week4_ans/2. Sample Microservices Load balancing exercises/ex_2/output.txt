@@ -1,0 +1,19 @@
+main                  INFO ApiGatewayLoadBalancingDemo    Inside main
+main                  INFO ApiGatewayLoadBalancingDemo    registered route id=load_balanced_route uri=lb://example-service predicate=Path=/loadbalanced/**
+main                  INFO ApiGatewayLoadBalancingDemo    service instances registered for 'example-service': [10.0.0.11:8081, 10.0.0.12:8081, 10.0.0.13:8081]
+main                  INFO ApiGatewayLoadBalancingDemo    curl command: curl -s http://localhost:8080/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    RandomLoadBalancer chose instance 10.0.0.12:8081, forwarding to http://10.0.0.12:8081/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    HTTP/1.1 200
+main                  INFO ApiGatewayLoadBalancingDemo    curl command: curl -s http://localhost:8080/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    RandomLoadBalancer chose instance 10.0.0.13:8081, forwarding to http://10.0.0.13:8081/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    HTTP/1.1 200
+main                  INFO ApiGatewayLoadBalancingDemo    curl command: curl -s http://localhost:8080/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    RandomLoadBalancer chose instance 10.0.0.11:8081, forwarding to http://10.0.0.11:8081/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    HTTP/1.1 200
+main                  INFO ApiGatewayLoadBalancingDemo    curl command: curl -s http://localhost:8080/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    RandomLoadBalancer chose instance 10.0.0.12:8081, forwarding to http://10.0.0.12:8081/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    HTTP/1.1 200
+main                  INFO ApiGatewayLoadBalancingDemo    curl command: curl -s http://localhost:8080/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    RandomLoadBalancer chose instance 10.0.0.12:8081, forwarding to http://10.0.0.12:8081/loadbalanced/orders
+main                  INFO ApiGatewayLoadBalancingDemo    HTTP/1.1 200
+main                  INFO ApiGatewayLoadBalancingDemo    End

@@ -1,0 +1,13 @@
+main                  INFO EurekaServiceRegistrationDemo  Inside main
+main                  INFO EurekaServiceRegistrationDemo  eureka-discovery-server started, Tomcat started on port(s): 8761
+main                  INFO EurekaServiceRegistrationDemo  curl command: curl -s http://localhost:8761/
+main                  INFO EurekaServiceRegistrationDemo  Instances currently registered with Eureka: []
+main                  INFO EurekaServiceRegistrationDemo  account application started with @EnableDiscoveryClient, spring.application.name=account-service
+main                  INFO EurekaServiceRegistrationDemo  DiscoveryClient_ACCOUNT-SERVICE/account - registration status: 204
+main                  INFO EurekaServiceRegistrationDemo  curl command: curl -s http://localhost:8761/
+main                  INFO EurekaServiceRegistrationDemo  Instances currently registered with Eureka: [ACCOUNT-SERVICE]
+main                  INFO EurekaServiceRegistrationDemo  loan application started with @EnableDiscoveryClient, spring.application.name=loan-service
+main                  INFO EurekaServiceRegistrationDemo  DiscoveryClient_LOAN-SERVICE/loan - registration status: 204
+main                  INFO EurekaServiceRegistrationDemo  curl command: curl -s http://localhost:8761/
+main                  INFO EurekaServiceRegistrationDemo  Instances currently registered with Eureka: [ACCOUNT-SERVICE, LOAN-SERVICE]
+main                  INFO EurekaServiceRegistrationDemo  End

@@ -1,0 +1,13 @@
+main                  INFO OidcCentralizedAuthenticationDemo Inside main
+main                  INFO OidcCentralizedAuthenticationDemo curl command: curl -s http://localhost:8080/user
+main                  INFO OidcCentralizedAuthenticationDemo HTTP/1.1 302 Found
+main                  INFO OidcCentralizedAuthenticationDemo Location: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=YOUR_CLIENT_ID&scope=openid,profile,email&redirect_uri={baseUrl}/login/oauth2/code/{registrationId}&state=f863b55a-8ea9-431c-bbfe-2562a38c201f
+main                  INFO OidcCentralizedAuthenticationDemo user authenticates at provider and grants consent
+main                  INFO OidcCentralizedAuthenticationDemo redirected to: http://localhost:8080/login/oauth2/code/my-client?code=auth_code_0246fa21-ec1c-40bf-b0ee-19e8c632b2e5&state=f863b55a-8ea9-431c-bbfe-2562a38c201f
+main                  INFO OidcCentralizedAuthenticationDemo exchanging authorization code at token-uri: https://oauth2.googleapis.com/token
+main                  INFO OidcCentralizedAuthenticationDemo token response={access_token=ya29.ad92ddfd-132f-45f4-977b-17116b568438, id_token=eyJhbGciOiJSUzI1NiJ9.34a40b34-6007-40d0-8a9e-60acf03436f9, token_type=Bearer, expires_in=3600}
+main                  INFO OidcCentralizedAuthenticationDemo fetching principal at user-info-uri: https://openidconnect.googleapis.com/v1/userinfo
+main                  INFO OidcCentralizedAuthenticationDemo curl command: curl -s http://localhost:8080/user
+main                  INFO OidcCentralizedAuthenticationDemo HTTP/1.1 200
+main                  INFO OidcCentralizedAuthenticationDemo response={sub=sub-98432, name=Jane Doe, email=jane.doe@example.com, email_verified=true}
+main                  INFO OidcCentralizedAuthenticationDemo End

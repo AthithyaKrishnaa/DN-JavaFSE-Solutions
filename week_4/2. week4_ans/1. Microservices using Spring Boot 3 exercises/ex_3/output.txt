@@ -1,0 +1,30 @@
+main                  INFO ApiGatewayRoutingDemo          Inside main
+main                  INFO ApiGatewayRoutingDemo          registered route id=customer_route uri=lb://customer-service predicate=Path=/customers/** filter=RewritePath(->/api/customers)
+main                  INFO ApiGatewayRoutingDemo          registered route id=billing_route uri=lb://billing-service predicate=Path=/billing/** filter=RewritePath(->/api/billing)
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/customers/1001
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /customers/1001 -> /api/customers
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'customer_route' token consumed, request allowed
+main                  INFO ApiGatewayRoutingDemo          forwarded to 10.0.0.31:8081/api/customers, response=200 OK from customer-service for /api/customers
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/customers/1001
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /customers/1001 -> /api/customers
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'customer_route' token consumed, request allowed
+main                  INFO ApiGatewayRoutingDemo          LocalResponseCache: cache hit for /api/customers, response=200 OK from customer-service for /api/customers
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/customers/1002
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /customers/1002 -> /api/customers
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'customer_route' exceeded, response=429 Too Many Requests
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/customers/1002
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /customers/1002 -> /api/customers
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'customer_route' token consumed, request allowed
+main                  INFO ApiGatewayRoutingDemo          LocalResponseCache: cache hit for /api/customers, response=200 OK from customer-service for /api/customers
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/billing/invoice/501
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /billing/invoice/501 -> /api/billing
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'billing_route' token consumed, request allowed
+main                  INFO ApiGatewayRoutingDemo          forwarded to 10.0.0.32:8082/api/billing, response=200 OK from billing-service for /api/billing
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/billing/invoice/502
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /billing/invoice/502 -> /api/billing
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'billing_route' token consumed, request allowed
+main                  INFO ApiGatewayRoutingDemo          LocalResponseCache: cache hit for /api/billing, response=200 OK from billing-service for /api/billing
+main                  INFO ApiGatewayRoutingDemo          curl command: curl -s http://localhost:8080/billing/invoice/503
+main                  INFO ApiGatewayRoutingDemo          RewritePath filter: /billing/invoice/503 -> /api/billing
+main                  INFO ApiGatewayRoutingDemo          RequestRateLimiter: route 'billing_route' exceeded, response=429 Too Many Requests
+main                  INFO ApiGatewayRoutingDemo          End

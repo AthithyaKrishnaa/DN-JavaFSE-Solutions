@@ -1,0 +1,14 @@
+main                  INFO GatewayRoutingFilteringDemo    Inside main
+main                  INFO GatewayRoutingFilteringDemo    registered route id=example_route uri=http://example.org predicate=Path=/example/**
+main                  INFO GatewayRoutingFilteringDemo    curl command: curl -s http://localhost:8080/example/orders
+main                  INFO GatewayRoutingFilteringDemo    Request: http://localhost:8080/example/orders
+main                  INFO GatewayRoutingFilteringDemo    matched route 'example_route', forwarding to http://example.org/example/orders
+main                  INFO GatewayRoutingFilteringDemo    HTTP/1.1 200
+main                  INFO GatewayRoutingFilteringDemo    curl command: curl -s http://localhost:8080/example/customers/42
+main                  INFO GatewayRoutingFilteringDemo    Request: http://localhost:8080/example/customers/42
+main                  INFO GatewayRoutingFilteringDemo    matched route 'example_route', forwarding to http://example.org/example/customers/42
+main                  INFO GatewayRoutingFilteringDemo    HTTP/1.1 200
+main                  INFO GatewayRoutingFilteringDemo    curl command: curl -s http://localhost:8080/other/health
+main                  INFO GatewayRoutingFilteringDemo    no route predicate matched /other/health
+main                  INFO GatewayRoutingFilteringDemo    HTTP/1.1 404
+main                  INFO GatewayRoutingFilteringDemo    End

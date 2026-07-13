@@ -1,0 +1,15 @@
+main                  INFO AccountLoanMicroservicesDemo   Inside main
+main                  INFO AccountLoanMicroservicesDemo   mvn clean package - account project BUILD SUCCESS
+main                  INFO AccountLoanMicroservicesDemo   account application started, Tomcat started on port(s): 8080
+main                  INFO AccountLoanMicroservicesDemo   curl command: curl -s http://localhost:8080/accounts/00987987973432
+main                  INFO AccountLoanMicroservicesDemo   HTTP/1.1 200
+main                  INFO AccountLoanMicroservicesDemo   response={number=00987987973432, type=savings, balance=234343}
+main                  INFO AccountLoanMicroservicesDemo   mvn clean package - loan project BUILD SUCCESS
+main                  INFO AccountLoanMicroservicesDemo   APPLICATION FAILED TO START
+main                  INFO AccountLoanMicroservicesDemo   Description: Web server failed to start. Port 8080 was already in use.
+main                  INFO AccountLoanMicroservicesDemo   adding server.port=8081 to application.properties of loan project
+main                  INFO AccountLoanMicroservicesDemo   loan application started, Tomcat started on port(s): 8081
+main                  INFO AccountLoanMicroservicesDemo   curl command: curl -s http://localhost:8081/loans/H00987987972342
+main                  INFO AccountLoanMicroservicesDemo   HTTP/1.1 200
+main                  INFO AccountLoanMicroservicesDemo   response={number=H00987987972342, type=car, loan=400000, emi=3258, tenure=18}
+main                  INFO AccountLoanMicroservicesDemo   End

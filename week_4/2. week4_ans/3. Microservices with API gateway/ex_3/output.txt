@@ -1,0 +1,17 @@
+main                  INFO ApiGatewayGlobalFilterDemo     Inside main
+main                  INFO ApiGatewayGlobalFilterDemo     greet-service started, Tomcat started on port(s): 8080
+main                  INFO ApiGatewayGlobalFilterDemo     curl command: curl -s http://localhost:8080/greet
+main                  INFO ApiGatewayGlobalFilterDemo     HTTP/1.1 200
+main                  INFO ApiGatewayGlobalFilterDemo     response=Hello World!!
+main                  INFO ApiGatewayGlobalFilterDemo     eureka-server started, Tomcat started on port(s): 8761
+main                  INFO ApiGatewayGlobalFilterDemo     Instances currently registered with Eureka: [GREET-SERVICE]
+main                  INFO ApiGatewayGlobalFilterDemo     api-gateway started, Tomcat started on port(s): 9090 with discovery.locator.enabled=true
+main                  INFO ApiGatewayGlobalFilterDemo     curl command: curl -s http://localhost:9090/GREET-SERVICE/greet
+main                  INFO ApiGatewayGlobalFilterDemo     ====>Request URL http://localhost:9090/GREET-SERVICE/greet
+main                  INFO ApiGatewayGlobalFilterDemo     HTTP/1.1 200
+main                  INFO ApiGatewayGlobalFilterDemo     response=Hello World!!
+main                  INFO ApiGatewayGlobalFilterDemo     curl command: curl -s http://localhost:9090/greet-service/greet
+main                  INFO ApiGatewayGlobalFilterDemo     ====>Request URL http://localhost:9090/greet-service/greet
+main                  INFO ApiGatewayGlobalFilterDemo     HTTP/1.1 200
+main                  INFO ApiGatewayGlobalFilterDemo     response=Hello World!!
+main                  INFO ApiGatewayGlobalFilterDemo     End

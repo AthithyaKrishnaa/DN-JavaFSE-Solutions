@@ -1,0 +1,13 @@
+main                  INFO JwtSecureCommunicationDemo     Inside main
+main                  INFO JwtSecureCommunicationDemo     generated JWT for user 'john.doe': eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZSIsImlhdCI6MTc4Mzk1MzYyNzk4NCwiZXhwIjoxNzgzOTU3MjI3OTg0fQ.o9pAEWrDoyhbds0zRe68K2SuIBTSYUP2B8CvPgENvZo
+main                  INFO JwtSecureCommunicationDemo     curl command: curl -s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZSIsImlhdCI6MTc4Mzk1MzYyNzk4NCwiZXhwIjoxNzgzOTU3MjI3OTg0fQ.o9pAEWrDoyhbds0zRe68K2SuIBTSYUP2B8CvPgENvZo" http://localhost:8080/secure
+main                  INFO JwtSecureCommunicationDemo     SecurityContextHolder authentication set for principal: john.doe
+main                  INFO JwtSecureCommunicationDemo     HTTP/1.1 200
+main                  INFO JwtSecureCommunicationDemo     response=This is a secure endpoint, hello john.doe
+main                  INFO JwtSecureCommunicationDemo     curl command: curl -s http://localhost:8080/secure
+main                  INFO JwtSecureCommunicationDemo     resolveToken returned null, SecurityContextHolder left unauthenticated: null
+main                  INFO JwtSecureCommunicationDemo     HTTP/1.1 401
+main                  INFO JwtSecureCommunicationDemo     curl command: curl -s -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZSIsImlhdCI6MTc4Mzk1MzYyNzk4NCwiZXhwIjoxNzgzOTU3MjI3OTg0fQ.o9pAEWrDoyhbds0zRe68K2SuIBTSYUP2B8CvPgEabcd" http://localhost:8080/secure
+main                  INFO JwtSecureCommunicationDemo     validateToken failed signature check, authenticated user: null
+main                  INFO JwtSecureCommunicationDemo     HTTP/1.1 401
+main                  INFO JwtSecureCommunicationDemo     End

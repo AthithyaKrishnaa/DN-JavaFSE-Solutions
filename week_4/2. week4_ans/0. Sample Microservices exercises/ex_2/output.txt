@@ -1,0 +1,17 @@
+main                  INFO AuthorizationResourceServerDemo Inside main
+main                  INFO AuthorizationResourceServerDemo curl command: curl -s http://localhost:8080/secure
+main                  INFO AuthorizationResourceServerDemo HTTP/1.1 401
+main                  INFO AuthorizationResourceServerDemo response={status=401, error=Unauthorized, message=Full authentication is required to access this resource, path=/secure}
+main                  INFO AuthorizationResourceServerDemo curl command: curl -s -H "Authorization: Bearer <valid-jwt-issued-by-https://issuer.example.com>" http://localhost:8080/secure
+main                  INFO AuthorizationResourceServerDemo token issuer 'https://issuer.example.com' matches configured issuer-uri, token not expired
+main                  INFO AuthorizationResourceServerDemo HTTP/1.1 200
+main                  INFO AuthorizationResourceServerDemo response=This is a secure endpoint
+main                  INFO AuthorizationResourceServerDemo curl command: curl -s -H "Authorization: Bearer <expired-jwt>" http://localhost:8080/secure
+main                  INFO AuthorizationResourceServerDemo token expired at 1783953566, current time 1783953626
+main                  INFO AuthorizationResourceServerDemo HTTP/1.1 401
+main                  INFO AuthorizationResourceServerDemo response={status=401, error=Unauthorized, message=Full authentication is required to access this resource, path=/secure}
+main                  INFO AuthorizationResourceServerDemo curl command: curl -s -H "Authorization: Bearer <jwt-from-untrusted-issuer>" http://localhost:8080/secure
+main                  INFO AuthorizationResourceServerDemo token issuer 'https://untrusted-issuer.example.com' does not match configured issuer-uri 'https://issuer.example.com'
+main                  INFO AuthorizationResourceServerDemo HTTP/1.1 401
+main                  INFO AuthorizationResourceServerDemo response={status=401, error=Unauthorized, message=Full authentication is required to access this resource, path=/secure}
+main                  INFO AuthorizationResourceServerDemo End
