@@ -1,8 +1,4 @@
-=========================
 ANGULAR HANDS-ON SUMMARY
-=========================
-
-
 
 # Student Course Portal – Hands-On Documentation
 
