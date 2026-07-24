@@ -1,4 +1,8 @@
-# ANGULAR HANDS-ON SUMMARY
+=========================
+ANGULAR HANDS-ON SUMMARY
+=========================
+
+
 
 # Student Course Portal – Hands-On Documentation
 
@@ -44,12 +48,14 @@
 
 ---
 
-## Hands-On 5: Routing & Navigation
-- Configured Angular Routing.
-- Created multiple pages and navigated using RouterLink.
-- Added routes for Home, Enrollment Form, and other components.
-- Used `<router-outlet>` to display routed components.
-- Implemented navigation between pages without reloading the application.
+## Hands-On 5: Reactive Forms
+  - ReactiveFormsModule
+  - FormBuilder & FormGroup
+  - FormControl & FormArray
+  - Built-in Validators
+  - Custom Synchronous Validator
+  - Custom Asynchronous Validator
+  - Dynamic Form Controls
 
 ---
 
